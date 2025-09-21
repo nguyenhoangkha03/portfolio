@@ -1,11 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Briefcase, MapPin, Calendar, Award } from 'lucide-react';
-import { portfolioData } from '../../data/portfolio';
+import { useTranslation } from 'react-i18next';
 import Card from '../ui/Card';
 
 const Experience = () => {
-  const { experience } = portfolioData;
+  const { t } = useTranslation();
+  const experience = t('experience', { returnObjects: true });
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -38,10 +39,10 @@ const Experience = () => {
         >
           <motion.div className="text-center mb-16" variants={itemVariants}>
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
-              Work <span className="gradient-text">Experience</span>
+              {t('experience_section.title')} <span className="gradient-text">{t('experience_section.highlight')}</span>
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              My professional journey and the impact I've made at each organization
+              {t('experience_section.subtitle')}
             </p>
           </motion.div>
 
@@ -93,7 +94,7 @@ const Experience = () => {
                       <div className="mb-6">
                         <h4 className="font-semibold text-gray-900 dark:text-white mb-3 flex items-center">
                           <Award size={18} className="mr-2 text-accent-600 dark:text-accent-400" />
-                          Key Achievements
+                          {t('experience_section.key_achievements')}
                         </h4>
                         <ul className="space-y-2">
                           {exp.achievements.map((achievement, achieveIndex) => (
@@ -114,7 +115,7 @@ const Experience = () => {
 
                       <div>
                         <h4 className="font-semibold text-gray-900 dark:text-white mb-3">
-                          Technologies Used
+                          {t('experience_section.technologies_used')}
                         </h4>
                         <div className="flex flex-wrap gap-2">
                           {exp.technologies.map((tech, techIndex) => (
@@ -161,11 +162,10 @@ const Experience = () => {
           >
             <div className="bg-gradient-to-r from-primary-50 to-accent-50 dark:from-primary-900/20 dark:to-accent-900/20 rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                Ready for the Next Challenge
+                {t('experience_section.next_challenge_title')}
               </h3>
               <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                I'm always excited to take on new projects and collaborate with amazing teams. 
-                Let's build something incredible together!
+                {t('experience_section.next_challenge_subtitle')}
               </p>
             </div>
           </motion.div>

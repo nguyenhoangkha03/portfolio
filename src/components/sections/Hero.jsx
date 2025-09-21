@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail, ExternalLink } from "lucide-react";
-import { portfolioData } from "../../data/portfolio";
+import { useTranslation } from "react-i18next";
 import Button from "../ui/Button";
 import PixelTransition from "../ui/PixelTransition";
 import LightRays from "../ui/LightRays";
@@ -9,7 +9,9 @@ import avatar from "../../assets/avatar.jpg";
 import background from "../../assets/background-2.jpg";
 
 const Hero = () => {
-    const { personal, social } = portfolioData;
+    const { t } = useTranslation();
+    const personal = t("personal", { returnObjects: true });
+    const social = t("social", { returnObjects: true });
 
     const scrollToNext = () => {
         document.querySelector("#about").scrollIntoView({ behavior: "smooth" });
@@ -102,7 +104,7 @@ const Hero = () => {
                                                 👋
                                             </div>
                                             <div className="text-xs md:text-sm font-semibold text-white/90">
-                                                Hello!
+                                                {t("hero.hello")}
                                             </div>
                                         </div>
                                     </div>
@@ -124,7 +126,7 @@ const Hero = () => {
                             transition={{ duration: 0.8, ease: "easeOut" }}
                         >
                             <span className="text-gray-900 dark:text-white">
-                                Hi, I'm{" "}
+                                {t("hero.hi_im")}{" "}
                             </span>
                             <span className="gradient-text">
                                 {personal.name}
@@ -132,17 +134,16 @@ const Hero = () => {
                         </motion.h1>
                     </motion.div>
 
-                    <motion.div variants={itemVariants}>
+                    {/* <motion.div variants={itemVariants}>
                         <motion.h2
                             className="text-xl md:text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 mb-6 font-light"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 1, delay: 0.5 }}
                         >
-                            {/* If the light is too dim, We'll become torches to
-                            guide each other */}
+                            {t("hero.subtitle")}
                         </motion.h2>
-                    </motion.div>
+                    </motion.div> */}
 
                     <motion.div variants={itemVariants}>
                         <motion.p
@@ -151,8 +152,7 @@ const Hero = () => {
                             animate={{ opacity: 1 }}
                             transition={{ duration: 1, delay: 0.7 }}
                         >
-                            If the light is too dim, we'll become torches to
-                            guide each other
+                            {t("hero.subtitle")}
                         </motion.p>
                     </motion.div>
 
@@ -170,7 +170,7 @@ const Hero = () => {
                             }
                             className="group"
                         >
-                            View My Work
+                            {t("hero.view_my_work")}
                             <ExternalLink
                                 size={20}
                                 className="ml-2 group-hover:translate-x-1 transition-transform"
@@ -186,7 +186,7 @@ const Hero = () => {
                                     .scrollIntoView({ behavior: "smooth" })
                             }
                         >
-                            Get In Touch
+                            {t("hero.get_in_touch")}
                         </Button>
                     </motion.div>
 

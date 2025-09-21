@@ -12,10 +12,12 @@ import {
     Handshake,
     Flame,
 } from "lucide-react";
-import { portfolioData } from "../../data/portfolio";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
-    const { personal, social } = portfolioData;
+    const { t } = useTranslation();
+    const personal = t('personal', { returnObjects: true });
+    const social = t('social', { returnObjects: true });
 
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
@@ -80,22 +82,22 @@ const Footer = () => {
                             transition={{ duration: 0.6, delay: 0.1 }}
                         >
                             <h4 className="text-lg font-semibold mb-4">
-                                Quick Links
+                                {t('footer.quick_links')}
                             </h4>
                             <ul className="space-y-2">
                                 {[
-                                    "Home",
-                                    "About",
-                                    "Projects",
-                                    "Experience",
-                                    "Contact",
+                                    { name: t('nav.home'), href: '#home' },
+                                    { name: t('nav.about'), href: '#about' },
+                                    { name: t('nav.projects'), href: '#projects' },
+                                    { name: t('nav.experience'), href: '#experience' },
+                                    { name: t('nav.contact'), href: '#contact' },
                                 ].map((item, index) => (
                                     <li key={index}>
                                         <button
                                             onClick={() => {
                                                 const element =
-                                                    document.getElementById(
-                                                        item.toLowerCase()
+                                                    document.querySelector(
+                                                        item.href
                                                     );
                                                 if (element) {
                                                     element.scrollIntoView({
@@ -105,7 +107,7 @@ const Footer = () => {
                                             }}
                                             className="text-gray-300 hover:text-primary-400 transition-colors duration-200"
                                         >
-                                            {item}
+                                            {item.name}
                                         </button>
                                     </li>
                                 ))}
@@ -119,7 +121,7 @@ const Footer = () => {
                             transition={{ duration: 0.6, delay: 0.2 }}
                         >
                             <h4 className="text-lg font-semibold mb-4">
-                                Contact Info
+                                {t('footer.contact_info')}
                             </h4>
                             <div className="space-y-2 text-gray-300">
                                 <p>{personal.location}</p>
@@ -144,20 +146,20 @@ const Footer = () => {
                                         className="text-yellow-400"
                                     />
                                     <span>
-                                        If the light is too dim, we'll become
+                                        {t('footer.tagline_1')}
                                     </span>
                                     <Flame
                                         size={16}
                                         className="text-orange-500"
                                     />
-                                    <span>torches to guide each other</span>
+                                    <span>{t('footer.tagline_2')}</span>
                                     <Heart
                                         size={16}
                                         className="text-red-500 mx-1"
                                     />
                                 </p>
                                 <p className="flex justify-center items-center">
-                                    Nguyen Hoang Kha
+                                    {personal.name}
                                 </p>
                             </motion.div>
 
@@ -170,7 +172,7 @@ const Footer = () => {
                                 transition={{ duration: 0.6, delay: 0.4 }}
                                 whileHover={{ y: -2 }}
                             >
-                                <span className="text-sm">Back to top</span>
+                                <span className="text-sm">{t('footer.back_to_top')}</span>
                                 <ArrowUp
                                     size={16}
                                     className="group-hover:-translate-y-1 transition-transform duration-200"

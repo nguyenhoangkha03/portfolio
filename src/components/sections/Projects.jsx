@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Github, ExternalLink, Filter } from "lucide-react";
-import { portfolioData } from "../../data/portfolio";
+import { useTranslation } from "react-i18next";
 import Card from "../ui/Card";
 import Button from "../ui/Button";
 
 const Projects = () => {
+    const { t } = useTranslation();
     const [activeFilter, setActiveFilter] = useState("All");
-    const { projects } = portfolioData;
+    const projects = t('projects', { returnObjects: true });
+    const social = t('social', { returnObjects: true });
 
     const categories = [
         "All",
@@ -53,11 +55,10 @@ const Projects = () => {
                         variants={itemVariants}
                     >
                         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
-                            My <span className="gradient-text">Projects</span>
+                            {t('projects_section.title')} <span className="gradient-text">{t('projects_section.highlight')}</span>
                         </h2>
                         <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                            A collection of projects I've worked on, from
-                            concept to completion
+                            {t('projects_section.subtitle')}
                         </p>
                     </motion.div>
 
@@ -71,7 +72,7 @@ const Projects = () => {
                                 className="text-gray-600 dark:text-gray-400"
                             />
                             <span className="text-gray-600 dark:text-gray-400 font-medium">
-                                Filter by:
+                                {t('projects_section.filter_by')}
                             </span>
                         </div>
 
@@ -141,7 +142,7 @@ const Projects = () => {
                                             {project.featured && (
                                                 <div className="absolute top-4 left-4">
                                                     <span className="bg-accent-500 text-white text-xs font-bold px-2 py-1 rounded-full">
-                                                        Featured
+                                                        {t('projects_section.featured')}
                                                     </span>
                                                 </div>
                                             )}
@@ -164,7 +165,7 @@ const Projects = () => {
 
                                             <div className="mb-4">
                                                 <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">
-                                                    Key Features:
+                                                    {t('projects_section.key_features')}
                                                 </h4>
                                                 <ul className="text-xs text-gray-600 dark:text-gray-400 space-y-1">
                                                     {project.highlights
@@ -203,7 +204,7 @@ const Projects = () => {
                                                         +
                                                         {project.technologies
                                                             .length - 4}{" "}
-                                                        more
+                                                        {t('projects_section.more')}
                                                     </span>
                                                 )}
                                             </div>
@@ -220,7 +221,7 @@ const Projects = () => {
                                                         size={14}
                                                         className="mr-1"
                                                     />
-                                                    Live Demo
+                                                    {t('projects_section.live_demo')}
                                                 </Button>
                                                 <Button
                                                     variant="outline"
@@ -233,7 +234,7 @@ const Projects = () => {
                                                         size={14}
                                                         className="mr-1"
                                                     />
-                                                    Code
+                                                    {t('projects_section.code')}
                                                 </Button>
                                             </div>
                                         </div>
@@ -250,7 +251,7 @@ const Projects = () => {
                             animate={{ opacity: 1 }}
                         >
                             <p className="text-gray-600 dark:text-gray-400 text-lg">
-                                No projects found in this category.
+                                {t('projects_section.no_projects')}
                             </p>
                         </motion.div>
                     )}
@@ -262,11 +263,11 @@ const Projects = () => {
                         <Button
                             variant="outline"
                             size="lg"
-                            href={portfolioData.social.github}
+                            href={social.github}
                             target="_blank"
                         >
                             <Github size={20} className="mr-2" />
-                            View All Projects on GitHub
+                            {t('projects_section.view_all_on_github')}
                         </Button>
                     </motion.div>
                 </motion.div>

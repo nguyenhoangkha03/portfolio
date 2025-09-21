@@ -1,0 +1,333 @@
+{
+    "personal": {
+        "name": "Hoàng Kha",
+        "title": "Lập trình viên Full Stack",
+        "location": "Cần Thơ, Việt Nam",
+        "email": "akaisui03@gmail.com",
+        "phone": "+84 365 907 475",
+        "tagline": "Kiến tạo trải nghiệm số với công nghệ hiện đại",
+        "bio": "Một lập trình viên full-stack đầy nhiệt huyết với kinh nghiệm xây dựng các ứng dụng web có khả năng mở rộng. Tôi thích biến các vấn đề phức tạp thành các giải pháp đơn giản, đẹp và trực quan.",
+        "profileImage": "/assets/avatar.jpg",
+        "resume": "/CV-VN.pdf"
+    },
+    "social": {
+        "github": "https://github.com/nguyenhoangkha03",
+        "linkedin": "https://www.linkedin.com/in/kha-nguyen-86622b329/",
+        "facebook": "https://www.facebook.com/NguyenHoangKha1910/",
+        "x": "https://x.com/akaisui03",
+        "instagram": "https://www.instagram.com/hoangkha1910/",
+        "website": "#",
+        "medium": "https://medium.com/@alexchen"
+    },
+    "nav": {
+        "home": "Trang chủ",
+        "about": "Giới thiệu",
+        "projects": "Dự án",
+        "experience": "Kinh nghiệm",
+        "contact": "Liên hệ"
+    },
+    "hero": {
+        "hello": "Xin chào!",
+        "hi_im": "Chào, tôi là",
+        "subtitle": "Nếu ánh sáng quá yếu, chúng ta sẽ trở thành những ngọn đuốc để dẫn lối cho nhau",
+        "view_my_work": "Xem dự án",
+        "get_in_touch": "Liên hệ"
+    },
+    "about": {
+        "title": "Về",
+        "me": "Tôi",
+        "subtitle": "Đam mê tạo ra những trải nghiệm kỹ thuật số đặc biệt với các công nghệ tiên tiến",
+        "who_i_am": "Tôi là ai",
+        "location": "Địa chỉ",
+        "experience": "Kinh nghiệm",
+        "experience_years": "1 năm",
+        "download_resume": "Tải CV",
+        "education_and_certifications": "Học vấn & Chứng chỉ",
+        "certifications": "Chứng chỉ",
+        "technical_skills_title": "Kỹ năng",
+        "technical_skills_highlight": "công nghệ",
+        "technical_skills_subtitle": "Các công nghệ và công cụ tôi làm việc cùng"
+    },
+    "projects_section": {
+        "title": "Các",
+        "highlight": "Dự án của tôi",
+        "subtitle": "Một bộ sưu tập các dự án tôi đã thực hiện, từ ý tưởng đến hoàn thành",
+        "filter_by": "Lọc theo:",
+        "featured": "Nổi bật",
+        "key_features": "Tính năng chính:",
+        "more": "thêm",
+        "live_demo": "Demo trực tiếp",
+        "code": "Mã nguồn",
+        "no_projects": "Không tìm thấy dự án nào trong danh mục này.",
+        "view_all_on_github": "Xem tất cả dự án trên GitHub"
+    },
+    "experience_section": {
+        "title": "Kinh nghiệm",
+        "highlight": "làm việc",
+        "subtitle": "Hành trình chuyên nghiệp của tôi và những tác động tôi đã tạo ra ở mỗi tổ chức",
+        "key_achievements": "Thành tựu chính",
+        "technologies_used": "Công nghệ đã sử dụng",
+        "next_challenge_title": "Sẵn sàng cho thử thách tiếp theo",
+        "next_challenge_subtitle": "Tôi luôn hào hứng đón nhận những dự án mới và hợp tác với những đội ngũ tuyệt vời. Hãy cùng nhau xây dựng một điều gì đó đáng kinh ngạc!"
+    },
+    "contact_section": {
+        "title": "Liên hệ",
+        "highlight": "với tôi",
+        "subtitle": "Bạn có dự án hay muốn hợp tác? Tôi rất muốn nghe từ bạn!",
+        "form_title": "Gửi tin nhắn cho tôi",
+        "form_success": "Gửi tin nhắn thành công! Tôi sẽ sớm liên hệ lại với bạn.",
+        "form_error": "Đã xảy ra lỗi. Vui lòng thử lại.",
+        "form_firstname": "Tên",
+        "form_firstname_error": "Tên là bắt buộc",
+        "form_firstname_placeholder": "Nguyễn",
+        "form_lastname": "Họ",
+        "form_lastname_error": "Họ là bắt buộc",
+        "form_lastname_placeholder": "Văn A",
+        "form_email": "Email",
+        "form_email_error": "Email là bắt buộc",
+        "form_email_invalid": "Địa chỉ email không hợp lệ",
+        "form_subject": "Chủ đề",
+        "form_subject_error": "Chủ đề là bắt buộc",
+        "form_subject_placeholder": "Hỏi về dự án",
+        "form_message": "Tin nhắn",
+        "form_message_error": "Tin nhắn là bắt buộc",
+        "form_message_minlength": "Tin nhắn phải có ít nhất 10 ký tự",
+        "form_message_placeholder": "Hãy cho tôi biết về dự án của bạn...",
+        "form_sending": "Đang gửi...",
+        "form_send_message": "Gửi tin nhắn",
+        "contact_info": "Thông tin liên hệ",
+        "email": "Email",
+        "phone": "Điện thoại",
+        "location": "Địa chỉ",
+        "follow_me": "Theo dõi tôi",
+        "response_time": "Tôi thường trả lời trong vòng 24 giờ. Rất mong nhận được tin từ bạn!"
+    },
+    "footer": {
+        "quick_links": "Liên kết nhanh",
+        "contact_info": "Thông tin liên hệ",
+        "tagline_1": "Nếu ánh sáng quá yếu, chúng ta sẽ trở thành",
+        "tagline_2": "những ngọn đuốc để dẫn lối cho nhau",
+        "back_to_top": "Trở lại đầu trang"
+    },
+    "skills": {
+        "frontend": [
+            { "name": "React", "level": 95, "icon": "⚛️" },
+            { "name": "TypeScript", "level": 90, "icon": "📘" },
+            { "name": "Next.js", "level": 88, "icon": "▲" },
+            { "name": "Vue.js", "level": 85, "icon": "💚" },
+            { "name": "JavaScript", "level": 95, "icon": "🟨" },
+            { "name": "CSS/SCSS", "level": 90, "icon": "🎨" },
+            { "name": "Tailwind CSS", "level": 92, "icon": "🎨" },
+            { "name": "Framer Motion", "level": 80, "icon": "🎭" }
+        ],
+        "backend": [
+            { "name": "Node.js", "level": 90, "icon": "🟢" },
+            { "name": "PHP", "level": 85, "icon": "🐘" },
+            { "name": "Express.js", "level": 88, "icon": "🚂" },
+            { "name": "Laravel", "level": 80, "icon": "⚡" },
+            { "name": "NestJS", "level": 85, "icon": "🦉" },
+            { "name": "GraphQL", "level": 82, "icon": "🔗" },
+            { "name": "REST APIs", "level": 92, "icon": "🔌" },
+            { "name": "MySQL", "level": 80, "icon": "🐬" },
+            { "name": "PostgreSQL", "level": 90, "icon": "🐘" },
+            { "name": "MongoDB", "level": 88, "icon": "🍃" }
+        ],
+        "tools": [
+            { "name": "Git", "level": 95, "icon": "📝" },
+            { "name": "Docker", "level": 85, "icon": "🐳" },
+            { "name": "AWS", "level": 80, "icon": "☁️" },
+            { "name": "Vercel", "level": 90, "icon": "▲" },
+            { "name": "Figma", "level": 75, "icon": "🎨" },
+            { "name": "VS Code", "level": 95, "icon": "💻" }
+        ]
+    },
+    "projects": [
+        {
+            "id": 1,
+            "title": "Nền tảng Mạng xã hội",
+            "description": "Một ứng dụng mạng xã hội full-stack được xây dựng bằng Laravel và MySQL. Các tính năng bao gồm xác thực người dùng, bài đăng, bình luận, lượt thích, hệ thống bạn bè, thông báo và nhắn tin thời gian thực bằng Laravel WebSockets.",
+            "image": "/social-network.png",
+            "technologies": ["Laravel", "MySQL", "Laravel WebSockets", "Tailwind CSS", "Livewire"],
+            "category": "Full Stack",
+            "featured": true,
+            "links": {
+                "live": "https://social-network-laravel-lh9vy.sevalla.app/",
+                "github": "https://github.com/nguyenhoangkha03/social-network"
+            },
+            "highlights": [
+                "Được xây dựng với Laravel và RESTful API",
+                "Trò chuyện thời gian thực bằng Laravel WebSockets",
+                "Hệ thống bạn bè với các yêu cầu và đề xuất",
+                "Bảng tin tương tác với lượt thích và bình luận",
+                "Hệ thống thông báo cho lượt thích, bình luận và yêu cầu kết bạn",
+                "Giao diện người dùng đáp ứng với Tailwind CSS và Livewire"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Cửa hàng thương mại điện tử đồ cầu lông",
+            "description": "Một nền tảng thương mại điện tử full-stack chuyên về thiết bị cầu lông với trợ lý mua sắm được hỗ trợ bởi AI, xử lý thanh toán an toàn và bảng điều khiển quản trị toàn diện để quản lý sản phẩm và đơn đặt hàng.",
+            "image": "/ecommerce.png",
+            "technologies": ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Sequelize", "Redux Toolkit", "Tailwind CSS", "Google Generative AI", "Stripe", "JWT"],
+            "category": "Full Stack",
+            "featured": true,
+            "links": {
+                "live": "https://badminton-shop-beta.vercel.app/",
+                "github": "https://github.com/nguyenhoangkha03/ecommerce-backend-k"
+            },
+            "highlights": [
+                "Trợ lý mua sắm được hỗ trợ bởi AI sử dụng Google Generative AI để đề xuất sản phẩm",
+                "Hệ thống xác thực an toàn với JWT và xác minh email",
+                "Quản lý hàng tồn kho thời gian thực với PostgreSQL và Sequelize ORM",
+                "Giao diện người dùng đáp ứng với Tailwind CSS và thiết kế glassmorphism hiện đại",
+                "Xử lý thanh toán tích hợp với Stripe và nhiều phương thức thanh toán",
+                "Hỗ trợ đa ngôn ngữ với quốc tế hóa i18next",
+                "Bảng điều khiển quản trị để quản lý sản phẩm, đơn đặt hàng và người dùng",
+                "Chức năng lọc, tìm kiếm và danh sách yêu thích sản phẩm nâng cao",
+                "Hệ thống đánh giá và xếp hạng của khách hàng với quản lý phản hồi",
+                "Hiệu suất được tối ưu hóa với bộ nhớ đệm Redis và tải hình ảnh lười biếng"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Hệ thống quản lý sửa chữa ô tô",
+            "description": "Một nền tảng quản lý sửa chữa ô tô full-stack toàn diện với đặt lịch hẹn thời gian thực, theo dõi dịch vụ và hệ thống quản lý khách hàng cho các cửa hàng sửa chữa ô tô.",
+            "image": "/car-repair.png",
+            "technologies": ["React", "Next.js", "TypeScript", "Node.js", "Express", "MySQL", "Socket.io", "React Native"],
+            "category": "Full Stack",
+            "featured": true,
+            "links": {
+                "live": "https://sua-xe-hong-hau.vercel.app/",
+                "github": "https://github.com/akaisui/car-repair-backend"
+            },
+            "highlights": [
+                "Hệ thống đặt lịch hẹn và theo dõi trạng thái thời gian thực",
+                "Bảng điều khiển toàn diện cho lịch sử sửa chữa và hóa đơn",
+                "Thông báo đẩy cho các cập nhật trạng thái sửa chữa",
+                "Ứng dụng di động cho kỹ thuật viên sử dụng React Native",
+                "Kiểm soát truy cập dựa trên vai trò cho khách hàng, kỹ thuật viên và quản trị viên",
+                "Chương trình phần thưởng và khách hàng thân thiết tích hợp",
+                "Dịch vụ thông báo qua email và SMS",
+                "Tìm kiếm và lọc nâng cao cho các dịch vụ và cuộc hẹn"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Ứng dụng thời tiết",
+            "description": "Một ứng dụng thời tiết đẹp và đáp ứng với dữ liệu thời tiết thời gian thực, thiết kế glassmorphism hiện đại và giao diện người dùng trực quan để kiểm tra điều kiện thời tiết trên toàn thế giới.",
+            "image": "/weather-app.png",
+            "technologies": ["React", "TypeScript", "OpenWeatherMap API", "CSS3"],
+            "category": "Frontend",
+            "featured": true,
+            "links": {
+                "live": "https://weather-app-two-jade-99.vercel.app/",
+                "github": "https://github.com/nguyenhoangkha03/weather-app"
+            },
+            "highlights": [
+                "Thiết kế giao diện người dùng glassmorphism hiện đại với hình nền động",
+                "Tích hợp dữ liệu thời tiết thời gian thực với API OpenWeatherMap",
+                "Thiết kế đáp ứng được tối ưu hóa cho mọi thiết bị",
+                "TypeScript cho chất lượng mã tốt hơn và trải nghiệm phát triển",
+                "Hoạt ảnh mượt mà và hiệu ứng di chuột để nâng cao trải nghiệm người dùng"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Ứng dụng Todo hiện đại",
+            "description": "Một ứng dụng quản lý tác vụ hiện đại được xây dựng bằng React, có giao diện người dùng đẹp mắt, các thao tác CRUD hoàn chỉnh, lưu trữ bằng localStorage và lọc tác vụ theo trạng thái.",
+            "image": "/todo-app.png",
+            "technologies": ["React", "CSS3", "JavaScript", "LocalStorage"],
+            "category": "Frontend",
+            "featured": true,
+            "links": {
+                "live": "https://todo-app-six-smoky-66.vercel.app/",
+                "github": "https://github.com/nguyenhoangkha03/todo-app"
+            },
+            "highlights": [
+                "Các thao tác CRUD hoàn chỉnh (Tạo, Đọc, Cập nhật, Xóa)",
+                "Đánh dấu nhiệm vụ là đã hoàn thành với hoạt ảnh",
+                "Lọc nhiệm vụ theo trạng thái (Tất cả / Đang hoạt động / Đã hoàn thành)",
+                "Lưu trữ bằng LocalStorage – không mất dữ liệu khi làm mới",
+                "Giao diện người dùng hiện đại với gradient và hiệu ứng di chuột",
+                "Thiết kế đáp ứng cho cả thiết bị di động và máy tính để bàn",
+                "Chỉnh sửa nội tuyến bằng phím tắt",
+                "Bảng điều khiển thống kê hiển thị tổng quan về tiến độ"
+            ]
+        },
+        {
+            "id": 6,
+            "title": "TaskFlow Pro - Bảng Kanban",
+            "description": "Một ứng dụng quản lý dự án Kanban hiện đại được xây dựng bằng React, có thiết kế glassmorphism, kéo và thả mượt mà, chế độ tối/sáng và hiệu ứng hoạt hình đẹp mắt.",
+            "image": "/kanban-board.png",
+            "technologies": ["React", "Tailwind CSS", "Framer Motion", "@hello-pangea/dnd", "Vite", "LocalStorage"],
+            "category": "Frontend",
+            "featured": true,
+            "links": {
+                "live": "https://kanban-board-three-azure.vercel.app/",
+                "github": "https://github.com/nguyenhoangkha03/kanban-board"
+            },
+            "highlights": [
+                "Kéo và thả nhiệm vụ giữa các cột với hoạt ảnh 3D",
+                "Chế độ tối/sáng với nền gradient và các hạt",
+                "Thiết kế glassmorphism với hiệu ứng làm mờฉากหลัง",
+                "Quản lý nhiệm vụ với mức độ ưu tiên, thẻ và mô tả",
+                "Lưu trữ bằng LocalStorage – không mất dữ liệu khi làm mới",
+                "Hoạt ảnh nâng cao được cung cấp bởi Framer Motion",
+                "Hoàn toàn đáp ứng cho thiết bị di động và máy tính để bàn",
+                "Các nút hành động nổi với các tương tác vi mô"
+            ]
+        }
+    ],
+    "experience": [
+        {
+            "id": 1,
+            "company": "Freelance",
+            "position": "Lập trình viên Full Stack",
+            "duration": "2022 - 2025",
+            "location": "Làm việc từ xa",
+            "description": "Làm việc với tư cách là một nhà phát triển full stack tự do trong thời gian học đại học, xây dựng và cung cấp các ứng dụng web cho các doanh nghiệp nhỏ và khách hàng cá nhân. Chịu trách nhiệm cho cả phát triển frontend và backend, triển khai và bảo trì.",
+            "achievements": [
+                "Thiết kế và phát triển hơn 5 trang web doanh nghiệp đáp ứng và các trang đích được tối ưu hóa SEO",
+                "Xây dựng các hệ thống quản lý nội dung tùy chỉnh phù hợp với nhu cầu của khách hàng",
+                "Tích hợp các cổng thanh toán trực tuyến như VNPay và MoMo",
+                "Hợp tác trực tiếp với khách hàng để thu thập yêu cầu và cung cấp giải pháp đúng hạn"
+            ],
+            "technologies": ["Next.js", "NestJS", "MySQL", "Tailwind CSS", "Firebase", "AWS S3"]
+        },
+        {
+            "id": 2,
+            "company": "Đại học Tây Đô",
+            "position": "Sinh viên phát triển",
+            "duration": "2021 - 2025",
+            "location": "Cần Thơ, Việt Nam",
+            "description": "Tham gia vào các dự án học thuật và nhóm khác nhau trong chương trình Khoa học Máy tính. Tập trung vào việc xây dựng các ứng dụng trong thế giới thực và cải thiện cả kỹ năng kỹ thuật và hợp tác.",
+            "achievements": [
+                "Phát triển một Hệ thống Quản lý Học tập (LMS) đầy đủ tính năng với quản lý khóa học, câu đố và theo dõi tiến độ",
+                "Xây dựng một ứng dụng quản lý sinh viên với RESTful API và xác thực JWT",
+                "Dẫn dắt nhóm backend trong nhiều dự án nhóm theo phương pháp Agile/Scrum",
+                "Triển khai các đường ống CI/CD bằng GitHub Actions để tự động hóa việc kiểm thử và triển khai"
+            ],
+            "technologies": ["React.js", "Laravel", "PostgreSQL", "Docker", "GitHub Actions"]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Đại học Tây Đô, Cần Thơ, Việt Nam",
+            "degree": "Cử nhân Phát triển Web",
+            "duration": "2021 - 2025",
+            "gpa": "3.8/4.0"
+        }
+    ],
+    "certifications": [
+        {
+            "name": "Chứng chỉ Node.js Trung cấp",
+            "issuer": "HackerRank",
+            "date": "2025"
+        },
+        {
+            "name": "Chứng chỉ - DSA",
+            "issuer": "Codelearn",
+            "date": "2025"
+        }
+    ]
+}

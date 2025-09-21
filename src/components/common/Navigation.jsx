@@ -3,8 +3,43 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "../../contexts/ThemeContext";
 import Button from "../ui/Button";
+import { useTranslation } from "react-i18next";
+
+const LanguageSwitcher = () => {
+    const { i18n } = useTranslation();
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
+
+    return (
+        <div className="flex items-center space-x-2 bg-gray-200 dark:bg-gray-700 p-1 rounded-full">
+            <button
+                onClick={() => changeLanguage("en")}
+                className={`px-3 py-1 text-sm font-semibold rounded-full transition-colors duration-300 ${
+                    i18n.language === "en"
+                        ? "bg-primary-600 text-white"
+                        : "text-gray-700 dark:text-gray-300"
+                }`}
+            >
+                EN
+            </button>
+            <button
+                onClick={() => changeLanguage("vi")}
+                className={`px-3 py-1 text-sm font-semibold rounded-full transition-colors duration-300 ${
+                    i18n.language === "vi"
+                        ? "bg-primary-600 text-white"
+                        : "text-gray-700 dark:text-gray-300"
+                }`}
+            >
+                VI
+            </button>
+        </div>
+    );
+};
 
 const Navigation = () => {
+    const { t } = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const { theme, toggleTheme } = useTheme();
@@ -19,11 +54,11 @@ const Navigation = () => {
     }, []);
 
     const navItems = [
-        { name: "Home", href: "#home" },
-        { name: "About", href: "#about" },
-        { name: "Projects", href: "#projects" },
-        { name: "Experience", href: "#experience" },
-        { name: "Contact", href: "#contact" },
+        { name: t('nav.home'), href: "#home" },
+        { name: t('nav.about'), href: "#about" },
+        { name: t('nav.projects'), href: "#projects" },
+        { name: t('nav.experience'), href: "#experience" },
+        { name: t('nav.contact'), href: "#contact" },
     ];
 
     const scrollToSection = (href) => {
@@ -82,21 +117,25 @@ const Navigation = () => {
                             </motion.button>
                         ))}
 
-                        <Button
-                            variant="ghost"
-                            size="sm"
-                            onClick={toggleTheme}
-                            className="p-2"
-                        >
-                            {theme === "dark" ? (
-                                <Sun size={20} />
-                            ) : (
-                                <Moon size={20} />
-                            )}
-                        </Button>
+                        <div className="flex items-center space-x-4">
+                            <LanguageSwitcher />
+                            <Button
+                                variant="ghost"
+                                size="sm"
+                                onClick={toggleTheme}
+                                className="p-2"
+                            >
+                                {theme === "dark" ? (
+                                    <Sun size={20} />
+                                ) : (
+                                    <Moon size={20} />
+                                )}
+                            </Button>
+                        </div>
                     </div>
 
                     <div className="md:hidden flex items-center space-x-4">
+                        <LanguageSwitcher />
                         <Button
                             variant="ghost"
                             size="sm"

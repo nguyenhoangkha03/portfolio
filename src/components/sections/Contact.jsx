@@ -2,14 +2,16 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, CheckCircle, AlertCircle } from 'lucide-react';
-import { portfolioData } from '../../data/portfolio';
+import { useTranslation } from 'react-i18next';
 import Card from '../ui/Card';
 import Button from '../ui/Button';
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
-  const { personal, social } = portfolioData;
+  const personal = t('personal', { returnObjects: true });
+  const social = t('social', { returnObjects: true });
 
   const {
     register,
@@ -56,21 +58,21 @@ const Contact = () => {
   const contactMethods = [
     {
       icon: Mail,
-      title: "Email",
+      title: t('contact_section.email'),
       value: personal.email,
       href: `mailto:${personal.email}`,
       color: "text-blue-600 dark:text-blue-400"
     },
     {
       icon: Phone,
-      title: "Phone",
+      title: t('contact_section.phone'),
       value: personal.phone,
       href: `tel:${personal.phone}`,
       color: "text-green-600 dark:text-green-400"
     },
     {
       icon: MapPin,
-      title: "Location",
+      title: t('contact_section.location'),
       value: personal.location,
       href: `https://maps.google.com?q=${encodeURIComponent(personal.location)}`,
       color: "text-red-600 dark:text-red-400"
@@ -93,7 +95,7 @@ const Contact = () => {
     {
       icon: Twitter,
       name: "Twitter",
-      url: social.twitter,
+      url: social.x,
       color: "hover:text-blue-400"
     }
   ];
@@ -109,10 +111,10 @@ const Contact = () => {
         >
           <motion.div className="text-center mb-16" variants={itemVariants}>
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
-              Get In <span className="gradient-text">Touch</span>
+              {t('contact_section.title')} <span className="gradient-text">{t('contact_section.highlight')}</span>
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Have a project in mind or want to collaborate? I'd love to hear from you!
+              {t('contact_section.subtitle')}
             </p>
           </motion.div>
 
@@ -120,7 +122,7 @@ const Contact = () => {
             <motion.div variants={itemVariants}>
               <Card>
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-                  Send Me a Message
+                  {t('contact_section.form_title')}
                 </h3>
 
                 {submitStatus && (
@@ -136,12 +138,12 @@ const Contact = () => {
                     {submitStatus === 'success' ? (
                       <>
                         <CheckCircle size={20} className="mr-2" />
-                        Message sent successfully! I'll get back to you soon.
+                        {t('contact_section.form_success')}
                       </>
                     ) : (
                       <>
                         <AlertCircle size={20} className="mr-2" />
-                        Something went wrong. Please try again.
+                        {t('contact_section.form_error')}
                       </>
                     )}
                   </motion.div>
@@ -151,16 +153,16 @@ const Contact = () => {
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-semibold text-gray-900 dark:text-white mb-2">
-                        First Name *
+                        {t('contact_section.form_firstname')} *
                       </label>
                       <input
-                        {...register('firstName', { required: 'First name is required' })}
+                        {...register('firstName', { required: t('contact_section.form_firstname_error') })}
                         className={`w-full px-4 py-3 rounded-lg border cursor-target ${
                           errors.firstName
                             ? 'border-red-500 focus:border-red-500'
                             : 'border-gray-300 dark:border-gray-600 focus:border-primary-500'
                         } bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500/20`}
-                        placeholder="John"
+                        placeholder={t('contact_section.form_firstname_placeholder')}
                       />
                       {errors.firstName && (
                         <p className="text-red-500 text-sm mt-1">{errors.firstName.message}</p>
@@ -169,16 +171,16 @@ const Contact = () => {
 
                     <div>
                       <label className="block text-sm font-semibold text-gray-900 dark:text-white mb-2">
-                        Last Name *
+                        {t('contact_section.form_lastname')} *
                       </label>
                       <input
-                        {...register('lastName', { required: 'Last name is required' })}
+                        {...register('lastName', { required: t('contact_section.form_lastname_error') })}
                         className={`w-full px-4 py-3 rounded-lg border cursor-target ${
                           errors.lastName
                             ? 'border-red-500 focus:border-red-500'
                             : 'border-gray-300 dark:border-gray-600 focus:border-primary-500'
                         } bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500/20`}
-                        placeholder="Doe"
+                        placeholder={t('contact_section.form_lastname_placeholder')}
                       />
                       {errors.lastName && (
                         <p className="text-red-500 text-sm mt-1">{errors.lastName.message}</p>
@@ -188,15 +190,15 @@ const Contact = () => {
 
                   <div>
                     <label className="block text-sm font-semibold text-gray-900 dark:text-white mb-2">
-                      Email *
+                      {t('contact_section.form_email')} *
                     </label>
                     <input
                       type="email"
                       {...register('email', {
-                        required: 'Email is required',
+                        required: t('contact_section.form_email_error'),
                         pattern: {
                           value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                          message: 'Invalid email address'
+                          message: t('contact_section.form_email_invalid')
                         }
                       })}
                       className={`w-full px-4 py-3 rounded-lg border cursor-target ${
@@ -213,16 +215,16 @@ const Contact = () => {
 
                   <div>
                     <label className="block text-sm font-semibold text-gray-900 dark:text-white mb-2">
-                      Subject *
+                      {t('contact_section.form_subject')} *
                     </label>
                     <input
-                      {...register('subject', { required: 'Subject is required' })}
+                      {...register('subject', { required: t('contact_section.form_subject_error') })}
                       className={`w-full px-4 py-3 rounded-lg border cursor-target ${
                         errors.subject
                           ? 'border-red-500 focus:border-red-500'
                           : 'border-gray-300 dark:border-gray-600 focus:border-primary-500'
                       } bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500/20`}
-                      placeholder="Project Inquiry"
+                      placeholder={t('contact_section.form_subject_placeholder')}
                     />
                     {errors.subject && (
                       <p className="text-red-500 text-sm mt-1">{errors.subject.message}</p>
@@ -231,15 +233,15 @@ const Contact = () => {
 
                   <div>
                     <label className="block text-sm font-semibold text-gray-900 dark:text-white mb-2">
-                      Message *
+                      {t('contact_section.form_message')} *
                     </label>
                     <textarea
                       rows="5"
                       {...register('message', {
-                        required: 'Message is required',
+                        required: t('contact_section.form_message_error'),
                         minLength: {
                           value: 10,
-                          message: 'Message must be at least 10 characters'
+                          message: t('contact_section.form_message_minlength')
                         }
                       })}
                       className={`w-full px-4 py-3 rounded-lg border cursor-target ${
@@ -247,7 +249,7 @@ const Contact = () => {
                           ? 'border-red-500 focus:border-red-500'
                           : 'border-gray-300 dark:border-gray-600 focus:border-primary-500'
                       } bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500/20 resize-none`}
-                      placeholder="Tell me about your project..."
+                      placeholder={t('contact_section.form_message_placeholder')}
                     />
                     {errors.message && (
                       <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>
@@ -264,12 +266,12 @@ const Contact = () => {
                     {isSubmitting ? (
                       <div className="flex items-center">
                         <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
-                        Sending...
+                        {t('contact_section.form_sending')}
                       </div>
                     ) : (
                       <>
                         <Send size={20} className="mr-2" />
-                        Send Message
+                        {t('contact_section.form_send_message')}
                       </>
                     )}
                   </Button>
@@ -280,7 +282,7 @@ const Contact = () => {
             <motion.div className="space-y-8" variants={itemVariants}>
               <Card>
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-                  Contact Information
+                  {t('contact_section.contact_info')}
                 </h3>
                 
                 <div className="space-y-6">
@@ -315,7 +317,7 @@ const Contact = () => {
 
               <Card>
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-                  Follow Me
+                  {t('contact_section.follow_me')}
                 </h3>
                 
                 <div className="flex space-x-6">
@@ -339,7 +341,7 @@ const Contact = () => {
 
                 <div className="mt-6 p-4 bg-gradient-to-r from-primary-50 to-accent-50 dark:from-primary-900/20 dark:to-accent-900/20 rounded-lg">
                   <p className="text-gray-700 dark:text-gray-300 text-sm text-center">
-                    I typically respond within 24 hours. Looking forward to hearing from you!
+                    {t('contact_section.response_time')}
                   </p>
                 </div>
               </Card>

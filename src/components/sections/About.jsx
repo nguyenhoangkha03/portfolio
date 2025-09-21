@@ -1,14 +1,19 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { User, Award, Download } from "lucide-react";
-import { portfolioData } from "../../data/portfolio";
+import { useTranslation } from "react-i18next";
 import Card from "../ui/Card";
 import SkillBar from "../ui/SkillBar";
 import Button from "../ui/Button";
 
 const About = () => {
+    const { t } = useTranslation();
     const [activeTab, setActiveTab] = useState("frontend");
-    const { personal, skills, education, certifications } = portfolioData;
+
+    const personal = t('personal', { returnObjects: true });
+    const skills = t('skills', { returnObjects: true });
+    const education = t('education', { returnObjects: true });
+    const certifications = t('certifications', { returnObjects: true });
 
     const tabs = [
         { id: "frontend", label: "Frontend", icon: "⚛️" },
@@ -50,11 +55,10 @@ const About = () => {
                         variants={itemVariants}
                     >
                         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
-                            About <span className="gradient-text">Me</span>
+                            {t('about.title')} <span className="gradient-text">{t('about.me')}</span>
                         </h2>
                         <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                            Passionate about creating exceptional digital
-                            experiences with cutting-edge technologies
+                            {t('about.subtitle')}
                         </p>
                     </motion.div>
 
@@ -69,7 +73,7 @@ const About = () => {
                                         />
                                     </div>
                                     <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-                                        Who I Am
+                                        {t('about.who_i_am')}
                                     </h3>
                                 </div>
 
@@ -80,7 +84,7 @@ const About = () => {
                                 <div className="grid grid-cols-2 gap-4 mb-6">
                                     <div>
                                         <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
-                                            Location
+                                            {t('about.location')}
                                         </h4>
                                         <p className="text-gray-600 dark:text-gray-400">
                                             {personal.location}
@@ -88,10 +92,10 @@ const About = () => {
                                     </div>
                                     <div>
                                         <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
-                                            Experience
+                                            {t('about.experience')}
                                         </h4>
                                         <p className="text-gray-600 dark:text-gray-400">
-                                            1 Year
+                                            {t('about.experience_years')}
                                         </p>
                                     </div>
                                 </div>
@@ -103,7 +107,7 @@ const About = () => {
                                     className="w-full sm:w-auto"
                                 >
                                     <Download size={20} className="mr-2" />
-                                    Download Resume
+                                    {t('about.download_resume')}
                                 </Button>
                             </Card>
                         </motion.div>
@@ -118,7 +122,7 @@ const About = () => {
                                         />
                                     </div>
                                     <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-                                        Education & Certifications
+                                        {t('about.education_and_certifications')}
                                     </h3>
                                 </div>
 
@@ -146,7 +150,7 @@ const About = () => {
 
                                     <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
                                         <h4 className="font-bold text-gray-900 dark:text-white mb-3">
-                                            Certifications
+                                            {t('about.certifications')}
                                         </h4>
                                         <div className="space-y-2">
                                             {certifications.map(
@@ -194,13 +198,13 @@ const About = () => {
                         <Card>
                             <div className="text-center mb-8">
                                 <h3 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">
-                                    Technical{" "}
+                                    {t('about.technical_skills_title')}{" "}
                                     <span className="gradient-text">
-                                        Skills
+                                        {t('about.technical_skills_highlight')}
                                     </span>
                                 </h3>
                                 <p className="text-gray-600 dark:text-gray-400">
-                                    Technologies and tools I work with
+                                    {t('about.technical_skills_subtitle')}
                                 </p>
                             </div>
 
