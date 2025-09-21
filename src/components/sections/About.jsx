@@ -91,7 +91,7 @@ const About = () => {
                                             Experience
                                         </h4>
                                         <p className="text-gray-600 dark:text-gray-400">
-                                            2+ Years
+                                            1 Year
                                         </p>
                                     </div>
                                 </div>
