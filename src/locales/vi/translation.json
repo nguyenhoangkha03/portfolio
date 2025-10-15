@@ -190,6 +190,42 @@
         },
         {
             "id": 3,
+            "title": "Hệ Thống Quản Lý Hợp Đồng",
+            "description": "Nền tảng quản lý hợp đồng doanh nghiệp full-stack với quy trình tự động hóa, phân quyền theo vai trò, tạo tài liệu và phân tích thời gian thực được xây dựng bằng Laravel và Filament.",
+            "image": "/contract.png",
+            "technologies": [
+                "Laravel 11",
+                "PHP 8.2",
+                "Filament 3.3",
+                "MySQL",
+                "Livewire",
+                "Tailwind CSS",
+                "PHPWord",
+                "Maatwebsite Excel",
+                "Vite",
+                "CloudFlare"
+            ],
+            "category": "Full Stack",
+            "featured": true,
+            "links": {
+                "live": "https://contract-management-wxizg.sevalla.app/",
+                "github": "https://github.com/nguyenhoangkha03/contract-management"
+            },
+            "highlights": [
+                "Hệ thống phân quyền nâng cao với 6 vai trò và 15 tính năng phân quyền chi tiết",
+                "Quy trình làm việc tự động đa giai đoạn với 6 trạng thái hợp đồng và thông báo thông minh",
+                "Tự động tạo tài liệu Word với hỗ trợ tiếng Việt và mẫu tùy chỉnh",
+                "Dashboard phân tích thời gian thực theo dõi giá trị hợp đồng, thanh toán và ngày hết hạn",
+                "Quản lý tài chính toàn diện với tự động theo dõi thanh toán và thanh lý",
+                "Xử lý hợp đồng đa bên với điều khoản, sản phẩm và cơ sở pháp lý tùy chỉnh",
+                "Hệ thống phân công người giám sát thông minh dựa trên loại hợp đồng và vai trò",
+                "Xác thực bảo mật với session database và tích hợp CloudFlare proxy",
+                "Giao diện quản trị chuyên nghiệp xây dựng bằng Filament 3 với thiết kế dark mode",
+                "Khả năng lọc, tìm kiếm và xuất dữ liệu nâng cao cho tất cả thông tin hợp đồng"
+            ]
+        },
+        {
+            "id": 3,
             "title": "Hệ thống quản lý sửa chữa ô tô",
             "description": "Một nền tảng quản lý sửa chữa ô tô full-stack toàn diện với đặt lịch hẹn thời gian thực, theo dõi dịch vụ và hệ thống quản lý khách hàng cho các cửa hàng sửa chữa ô tô.",
             "image": "/car-repair.png",

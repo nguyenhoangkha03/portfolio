@@ -190,6 +190,42 @@
         },
         {
             "id": 3,
+            "title": "Contract Management System",
+            "description": "A full-stack enterprise contract management platform with automated workflows, role-based permissions, document generation, and real-time analytics built with Laravel and Filament.",
+            "image": "/contract.png",
+            "technologies": [
+                "Laravel 11",
+                "PHP 8.2",
+                "Filament 3.3",
+                "MySQL",
+                "Livewire",
+                "Tailwind CSS",
+                "PHPWord",
+                "Maatwebsite Excel",
+                "Vite",
+                "CloudFlare"
+            ],
+            "category": "Full Stack",
+            "featured": true,
+            "links": {
+                "live": "https://contract-management-wxizg.sevalla.app/",
+                "github": "https://github.com/nguyenhoangkha03/contract-management"
+            },
+            "highlights": [
+                "Advanced role-based access control with 6 roles and 15 granular permission features",
+                "Automated multi-stage workflow with 6 contract statuses and intelligent notifications",
+                "Dynamic Word document generation with Vietnamese text support and custom templates",
+                "Real-time analytics dashboard tracking contract values, payments, and expiration dates",
+                "Comprehensive financial management with automated payment and liquidation tracking",
+                "Multi-party contract handling with customizable terms, products, and legal clauses",
+                "Intelligent supervisor assignment system based on contract types and roles",
+                "Secure authentication with database sessions and CloudFlare proxy integration",
+                "Professional admin interface built with Filament 3 featuring dark mode design",
+                "Advanced filtering, search, and export capabilities for all contract data"
+            ]
+        },
+        {
+            "id": 4,
             "title": "Car Repair Management System",
             "description": "A comprehensive full-stack car repair management platform with real-time appointment booking, service tracking, and customer management system for automotive repair shops.",
             "image": "/car-repair.png",
@@ -212,7 +248,7 @@
             ]
         },
         {
-            "id": 4,
+            "id": 5,
             "title": "Weather App",
             "description": "A beautiful and responsive weather application with real-time weather data, modern glass morphism design, and intuitive user interface for checking weather conditions worldwide.",
             "image": "/weather-app.png",
@@ -232,7 +268,7 @@
             ]
         },
         {
-            "id": 5,
+            "id": 6,
             "title": "Modern Todo App",
             "description": "A modern task management application built with React, featuring a sleek UI, complete CRUD operations, localStorage persistence, and task filtering by status.",
             "image": "/todo-app.png",
@@ -255,7 +291,7 @@
             ]
         },
         {
-            "id": 6,
+            "id": 7,
             "title": "TaskFlow Pro - Kanban Board",
             "description": "A modern Kanban project management app built with React, featuring glassmorphism design, smooth drag & drop, dark/light mode, and beautiful animation effects.",
             "image": "/kanban-board.png",
