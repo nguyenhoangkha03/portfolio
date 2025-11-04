@@ -225,7 +225,7 @@
             ]
         },
         {
-            "id": 3,
+            "id": 4,
             "title": "Hệ thống quản lý sửa chữa ô tô",
             "description": "Một nền tảng quản lý sửa chữa ô tô full-stack toàn diện với đặt lịch hẹn thời gian thực, theo dõi dịch vụ và hệ thống quản lý khách hàng cho các cửa hàng sửa chữa ô tô.",
             "image": "/car-repair.png",
@@ -248,7 +248,27 @@
             ]
         },
         {
-            "id": 4,
+            "id": 5,
+            "title": "TikTok Clone",
+            "description": "Một nền tảng chia sẻ video ngắn full-stack với livestream WebRTC, tin nhắn thời gian thực, hệ thống gợi ý thông minh và các tính năng tương tác mạng xã hội hoàn chỉnh.",
+            "image": "/tiktok-clone.png",
+            "technologies": ["Laravel", "Alpine.js", "MySQL", "Tailwind CSS", "WebRTC", "Pusher", "FFmpeg"],
+            "category": "Full Stack",
+            "featured": true,
+            "links": {
+                "live": "https://tiktok-clone-8qk36.sevalla.app/",
+                "github": "https://github.com/nguyenhoangkha03/tiktok-clone"
+            },
+            "highlights": [
+                "Livestream thời gian thực với WebRTC và quản lý kết nối P2P",
+                "Hệ thống tin nhắn trực tiếp với thông báo real-time qua Laravel Echo",
+                "Thuật toán gợi ý video thông minh dựa trên engagement và lịch sử xem",
+                "Upload và xử lý video tự động tạo thumbnail với FFmpeg",
+                "Tính năng tương tác đầy đủ: like, comment, share, favorite, follow"
+            ]
+        },
+        {
+            "id": 6,
             "title": "Ứng dụng thời tiết",
             "description": "Một ứng dụng thời tiết đẹp và đáp ứng với dữ liệu thời tiết thời gian thực, thiết kế glassmorphism hiện đại và giao diện người dùng trực quan để kiểm tra điều kiện thời tiết trên toàn thế giới.",
             "image": "/weather-app.png",
@@ -268,7 +288,7 @@
             ]
         },
         {
-            "id": 5,
+            "id": 7,
             "title": "Ứng dụng Todo hiện đại",
             "description": "Một ứng dụng quản lý tác vụ hiện đại được xây dựng bằng React, có giao diện người dùng đẹp mắt, các thao tác CRUD hoàn chỉnh, lưu trữ bằng localStorage và lọc tác vụ theo trạng thái.",
             "image": "/todo-app.png",
@@ -291,7 +311,7 @@
             ]
         },
         {
-            "id": 6,
+            "id": 8,
             "title": "TaskFlow Pro - Bảng Kanban",
             "description": "Một ứng dụng quản lý dự án Kanban hiện đại được xây dựng bằng React, có thiết kế glassmorphism, kéo và thả mượt mà, chế độ tối/sáng và hiệu ứng hoạt hình đẹp mắt.",
             "image": "/kanban-board.png",

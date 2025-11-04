@@ -247,8 +247,28 @@
                 "Advanced search and filtering for services and appointments"
             ]
         },
-        {
+            {
             "id": 5,
+            "title": "TikTok Clone",
+            "description": "A full-stack short video sharing platform with WebRTC livestream, real-time messaging, intelligent recommendation system, and complete social media interaction features.",
+            "image": "/tiktok-clone.png",
+            "technologies": ["Laravel", "Alpine.js", "MySQL", "Tailwind CSS", "WebRTC", "Pusher", "FFmpeg"],
+            "category": "Full Stack",
+            "featured": true,
+            "links": {
+                "live": "https://tiktok-clone-8qk36.sevalla.app/",
+                "github": "https://github.com/nguyenhoangkha03/tiktok-clone"
+            },
+            "highlights": [
+                "Real-time livestream with WebRTC and P2P connection management",
+                "Direct messaging system with real-time notifications via Laravel Echo",
+                "Smart video recommendation algorithm based on engagement and watch history",
+                "Automatic video upload and thumbnail generation with FFmpeg",
+                "Complete interaction features: like, comment, share, favorite, follow"
+            ]
+        },
+        {
+            "id": 6,
             "title": "Weather App",
             "description": "A beautiful and responsive weather application with real-time weather data, modern glass morphism design, and intuitive user interface for checking weather conditions worldwide.",
             "image": "/weather-app.png",
@@ -268,7 +288,7 @@
             ]
         },
         {
-            "id": 6,
+            "id": 7,
             "title": "Modern Todo App",
             "description": "A modern task management application built with React, featuring a sleek UI, complete CRUD operations, localStorage persistence, and task filtering by status.",
             "image": "/todo-app.png",
@@ -291,7 +311,7 @@
             ]
         },
         {
-            "id": 7,
+            "id": 8,
             "title": "TaskFlow Pro - Kanban Board",
             "description": "A modern Kanban project management app built with React, featuring glassmorphism design, smooth drag & drop, dark/light mode, and beautiful animation effects.",
             "image": "/kanban-board.png",
