@@ -3,19 +3,19 @@
         "name": "Hoang Kha",
         "title": "Full Stack Developer",
         "location": "Can Tho, Viet Nam",
-        "email": "akaisui03@gmail.com",
+        "email": "nhoangkha03@gmail.com",
         "phone": "+84 365 907 475",
         "tagline": "Crafting digital experiences with modern technologies",
         "bio": "A passionate full-stack developer with experience building scalable web applications. I enjoy turning complex problems into simple, beautiful, and intuitive solutions.",
         "profileImage": "/assets/avatar.jpg",
-        "resume": "/CV-VN.pdf"
+        "resume": "/Fullstack.pdf"
     },
     "social": {
         "github": "https://github.com/nguyenhoangkha03",
         "linkedin": "https://www.linkedin.com/in/kha-nguyen-86622b329/",
         "facebook": "https://www.facebook.com/NguyenHoangKha1910/",
         "x": "https://x.com/akaisui03",
-        "instagram": "https://www.instagram.com/hoangkha1910/",
+        "instagram": "https://www.instagram.com/akaisui03/",
         "website": "#",
         "medium": "https://medium.com/@alexchen"
     },
@@ -287,12 +287,12 @@
                 "Smooth animations and hover effects for enhanced UX"
             ]
         },
-        {
+         {
             "id": 7,
-            "title": "Modern Todo App",
-            "description": "A modern task management application built with React, featuring a sleek UI, complete CRUD operations, localStorage persistence, and task filtering by status.",
+            "title": "Minimal Zen - Todo App",
+            "description": "A mindful task management app built with React, featuring Japanese Minimalism and Neumorphism design philosophy for peaceful and conscious productivity.",
             "image": "/todo-app.png",
-            "technologies": ["React", "CSS3", "JavaScript", "LocalStorage"],
+            "technologies": ["React", "CSS3", "Neumorphism", "LocalStorage"],
             "category": "Frontend",
             "featured": true,
             "links": {
@@ -300,14 +300,18 @@
                 "github": "https://github.com/nguyenhoangkha03/todo-app"
             },
             "highlights": [
-                "Complete CRUD operations (Create, Read, Update, Delete)",
-                "Mark tasks as completed with animation",
-                "Filter tasks by status (All / Active / Completed)",
-                "LocalStorage persistence – no data loss on refresh",
-                "Modern UI with gradients and hover effects",
-                "Responsive design for both mobile and desktop",
-                "Inline editing with keyboard shortcuts",
-                "Statistics dashboard showing progress overview"
+                "Minimal Zen design with Japanese Neumorphism aesthetics",
+                "Animated SVG checkbox with stroke-dasharray drawing effect",
+                "Completed tasks display with blur effect instead of strikethrough",
+                "Floating Action Button (FAB) with rotation animation",
+                "Modal with backdrop blur and smooth scale-in transitions",
+                "Soft neumorphic shadows (inset + outset) on all elements",
+                "Animated gradient background shift (15s loop)",
+                "Custom scrollbar with gradient and rounded design",
+                "Nunito light-weight font (300-400) for gentle aesthetics",
+                "Pastel color palette: Sage green, Warm beige, Soft coral",
+                "Responsive design with generous spacing (40px+)",
+                "LocalStorage persistence - no data loss on refresh"
             ]
         },
         {

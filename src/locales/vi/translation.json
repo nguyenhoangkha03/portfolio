@@ -3,19 +3,19 @@
         "name": "Hoàng Kha",
         "title": "Lập trình viên Full Stack",
         "location": "Cần Thơ, Việt Nam",
-        "email": "akaisui03@gmail.com",
+        "email": "nhoangkha03@gmail.com",
         "phone": "+84 365 907 475",
         "tagline": "Kiến tạo trải nghiệm số với công nghệ hiện đại",
         "bio": "Một lập trình viên full-stack đầy nhiệt huyết với kinh nghiệm xây dựng các ứng dụng web có khả năng mở rộng. Tôi thích biến các vấn đề phức tạp thành các giải pháp đơn giản, đẹp và trực quan.",
         "profileImage": "/assets/avatar.jpg",
-        "resume": "/CV-VN.pdf"
+        "resume": "/Fullstack.pdf"
     },
     "social": {
         "github": "https://github.com/nguyenhoangkha03",
         "linkedin": "https://www.linkedin.com/in/kha-nguyen-86622b329/",
         "facebook": "https://www.facebook.com/NguyenHoangKha1910/",
         "x": "https://x.com/akaisui03",
-        "instagram": "https://www.instagram.com/hoangkha1910/",
+        "instagram": "https://www.instagram.com/akaisui03/",
         "website": "#",
         "medium": "https://medium.com/@alexchen"
     },
@@ -289,10 +289,10 @@
         },
         {
             "id": 7,
-            "title": "Ứng dụng Todo hiện đại",
-            "description": "Một ứng dụng quản lý tác vụ hiện đại được xây dựng bằng React, có giao diện người dùng đẹp mắt, các thao tác CRUD hoàn chỉnh, lưu trữ bằng localStorage và lọc tác vụ theo trạng thái.",
+            "title": "Minimal Zen - Ứng dụng Todo",
+            "description": "Ứng dụng quản lý công việc theo triết lý tối giản Nhật Bản, được xây dựng bằng React với thiết kế Neumorphism, mang đến trải nghiệm yên bình và năng suất có ý thức.",
             "image": "/todo-app.png",
-            "technologies": ["React", "CSS3", "JavaScript", "LocalStorage"],
+            "technologies": ["React", "CSS3", "Neumorphism", "LocalStorage"],
             "category": "Frontend",
             "featured": true,
             "links": {
@@ -300,14 +300,18 @@
                 "github": "https://github.com/nguyenhoangkha03/todo-app"
             },
             "highlights": [
-                "Các thao tác CRUD hoàn chỉnh (Tạo, Đọc, Cập nhật, Xóa)",
-                "Đánh dấu nhiệm vụ là đã hoàn thành với hoạt ảnh",
-                "Lọc nhiệm vụ theo trạng thái (Tất cả / Đang hoạt động / Đã hoàn thành)",
-                "Lưu trữ bằng LocalStorage – không mất dữ liệu khi làm mới",
-                "Giao diện người dùng hiện đại với gradient và hiệu ứng di chuột",
-                "Thiết kế đáp ứng cho cả thiết bị di động và máy tính để bàn",
-                "Chỉnh sửa nội tuyến bằng phím tắt",
-                "Bảng điều khiển thống kê hiển thị tổng quan về tiến độ"
+                 "Thiết kế Minimal Zen với phong cách Neumorphism Nhật Bản",
+                "Checkbox SVG động với hiệu ứng vẽ từ từ (stroke-dasharray)",
+                "Task hoàn thành hiển thị với hiệu ứng mờ blur thay vì gạch ngang",
+                "Nút FAB tròn nổi với hiệu ứng xoay khi hover",
+                "Modal với backdrop blur và chuyển động scale mượt mà",
+                "Bóng đổ neumorphic mềm mại (trong + ngoài) trên mọi thành phần",
+                "Nền gradient động chuyển màu nhẹ nhàng (chu kỳ 15 giây)",
+                "Thanh cuộn tùy chỉnh với gradient và bo tròn",
+                "Font Nunito nhẹ (300-400) tạo cảm giác nhẹ nhàng",
+                "Bảng màu pastel: Xanh sage, Be ấm, San hô nhạt",
+                "Thiết kế responsive với khoảng cách rộng rãi (40px+)",
+                "Lưu trữ LocalStorage - không mất dữ liệu khi làm mới trang"
             ]
         },
         {
