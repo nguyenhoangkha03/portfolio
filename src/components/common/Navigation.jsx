@@ -12,12 +12,15 @@ const LanguageSwitcher = () => {
         i18n.changeLanguage(lng);
     };
 
+    // Get the base language (e.g., "en" from "en-US") or default to "en"
+    const currentLang = i18n.language ? i18n.language.split("-")[0] : "en";
+
     return (
         <div className="flex items-center space-x-2 bg-gray-200 dark:bg-gray-700 p-1 rounded-full">
             <button
                 onClick={() => changeLanguage("en")}
                 className={`px-3 py-1 text-sm font-semibold rounded-full transition-colors duration-300 ${
-                    i18n.language === "en"
+                    currentLang === "en"
                         ? "bg-primary-600 text-white"
                         : "text-gray-700 dark:text-gray-300"
                 }`}
@@ -27,7 +30,7 @@ const LanguageSwitcher = () => {
             <button
                 onClick={() => changeLanguage("vi")}
                 className={`px-3 py-1 text-sm font-semibold rounded-full transition-colors duration-300 ${
-                    i18n.language === "vi"
+                    currentLang === "vi"
                         ? "bg-primary-600 text-white"
                         : "text-gray-700 dark:text-gray-300"
                 }`}
@@ -93,7 +96,7 @@ const Navigation = () => {
                             <motion.button
                                 key={item.name}
                                 onClick={() => scrollToSection(item.href)}
-                                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 font-medium relative group px-3 py-2 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 cursor-target"
+                                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 font-medium relative group cursor-target"
                                 initial={{ opacity: 0, y: -20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{
@@ -107,13 +110,6 @@ const Navigation = () => {
                                 whileTap={{ scale: 0.95 }}
                             >
                                 <span className="relative z-10">{item.name}</span>
-                                <motion.div 
-                                    className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                                    layoutId="navbar-hover"
-                                />
-                                <motion.div 
-                                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
-                                />
                             </motion.button>
                         ))}
 

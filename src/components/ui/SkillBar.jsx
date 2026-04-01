@@ -1,12 +1,22 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { iconMap } from '../../utils/iconMapping';
 
 const SkillBar = ({ skill, delay = 0 }) => {
   return (
     <div className="mb-6">
       <div className="flex justify-between items-center mb-2">
-        <div className="flex items-center space-x-2">
-          <span className="text-2xl">{skill.icon}</span>
+        <div className="flex items-center space-x-3">
+          <span 
+            className="text-2xl transition-colors duration-300"
+            style={{ color: iconMap[skill.icon]?.color || 'currentColor' }}
+          >
+            {iconMap[skill.icon] ? (
+              React.createElement(iconMap[skill.icon].icon)
+            ) : (
+              skill.icon
+            )}
+          </span>
           <span className="font-medium text-gray-900 dark:text-white">{skill.name}</span>
         </div>
         <span className="text-sm font-semibold text-primary-600 dark:text-primary-400">

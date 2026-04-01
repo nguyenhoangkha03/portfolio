@@ -1,393 +1,671 @@
 {
-    "personal": {
-        "name": "Hoang Kha",
-        "title": "Full Stack Developer",
-        "location": "Can Tho, Viet Nam",
-        "email": "nhoangkha03@gmail.com",
-        "phone": "+84 365 907 475",
-        "tagline": "Crafting digital experiences with modern technologies",
-        "bio": "A passionate full-stack developer with experience building scalable web applications. I enjoy turning complex problems into simple, beautiful, and intuitive solutions.",
-        "profileImage": "/assets/avatar.jpg",
-        "resume": "/Fullstack.pdf"
-    },
-    "social": {
-        "github": "https://github.com/nguyenhoangkha03",
-        "linkedin": "https://www.linkedin.com/in/kha-nguyen-86622b329/",
-        "facebook": "https://www.facebook.com/NguyenHoangKha1910/",
-        "x": "https://x.com/akaisui03",
-        "instagram": "https://www.instagram.com/akaisui03/",
-        "website": "#",
-        "medium": "https://medium.com/@alexchen"
-    },
-    "nav": {
-        "home": "Home",
-        "about": "About",
-        "projects": "Projects",
-        "experience": "Experience",
-        "contact": "Contact"
-    },
-    "hero": {
-        "hello": "Hello!",
-        "hi_im": "Hi, I'm",
-        "subtitle": "If the light is too dim, we'll become torches to guide each other",
-        "view_my_work": "View My Work",
-        "get_in_touch": "Get In Touch"
-    },
-    "about": {
-        "title": "About",
-        "me": "Me",
-        "subtitle": "Passionate about creating exceptional digital experiences with cutting-edge technologies",
-        "who_i_am": "Who I Am",
-        "location": "Location",
-        "experience": "Experience",
-        "experience_years": "1 Year",
-        "download_resume": "Download Resume",
-        "education_and_certifications": "Education & Certifications",
-        "certifications": "Certifications",
-        "technical_skills_title": "Technical",
-        "technical_skills_highlight": "Skills",
-        "technical_skills_subtitle": "Technologies and tools I work with"
-    },
-    "projects_section": {
-        "title": "My",
-        "highlight": "Projects",
-        "subtitle": "A collection of projects I've worked on, from concept to completion",
-        "filter_by": "Filter by:",
-        "featured": "Featured",
-        "key_features": "Key Features:",
-        "more": "more",
-        "live_demo": "Live Demo",
-        "code": "Code",
-        "no_projects": "No projects found in this category.",
-        "view_all_on_github": "View All Projects on GitHub"
-    },
-    "experience_section": {
-        "title": "Work",
-        "highlight": "Experience",
-        "subtitle": "My professional journey and the impact I've made at each organization",
-        "key_achievements": "Key Achievements",
-        "technologies_used": "Technologies Used",
-        "next_challenge_title": "Ready for the Next Challenge",
-        "next_challenge_subtitle": "I'm always excited to take on new projects and collaborate with amazing teams. Let's build something incredible together!"
-    },
-    "contact_section": {
-        "title": "Get In",
-        "highlight": "Touch",
-        "subtitle": "Have a project in mind or want to collaborate? I'd love to hear from you!",
-        "form_title": "Send Me a Message",
-        "form_success": "Message sent successfully! I'll get back to you soon.",
-        "form_error": "Something went wrong. Please try again.",
-        "form_firstname": "First Name",
-        "form_firstname_error": "First name is required",
-        "form_firstname_placeholder": "John",
-        "form_lastname": "Last Name",
-        "form_lastname_error": "Last name is required",
-        "form_lastname_placeholder": "Doe",
-        "form_email": "Email",
-        "form_email_error": "Email is required",
-        "form_email_invalid": "Invalid email address",
-        "form_subject": "Subject",
-        "form_subject_error": "Subject is required",
-        "form_subject_placeholder": "Project Inquiry",
-        "form_message": "Message",
-        "form_message_error": "Message is required",
-        "form_message_minlength": "Message must be at least 10 characters",
-        "form_message_placeholder": "Tell me about your project...",
-        "form_sending": "Sending...",
-        "form_send_message": "Send Message",
-        "contact_info": "Contact Information",
-        "email": "Email",
-        "phone": "Phone",
-        "location": "Location",
-        "follow_me": "Follow Me",
-        "response_time": "I typically respond within 24 hours. Looking forward to hearing from you!"
-    },
-    "footer": {
-        "quick_links": "Quick Links",
-        "contact_info": "Contact Info",
-        "tagline_1": "If the light is too dim, we'll become",
-        "tagline_2": "torches to guide each other",
-        "back_to_top": "Back to top"
-    },
-    "skills": {
-        "frontend": [
-            { "name": "React", "level": 95, "icon": "⚛️" },
-            { "name": "TypeScript", "level": 90, "icon": "📘" },
-            { "name": "Next.js", "level": 88, "icon": "▲" },
-            { "name": "Vue.js", "level": 85, "icon": "💚" },
-            { "name": "JavaScript", "level": 95, "icon": "🟨" },
-            { "name": "CSS/SCSS", "level": 90, "icon": "🎨" },
-            { "name": "Tailwind CSS", "level": 92, "icon": "🎨" },
-            { "name": "Framer Motion", "level": 80, "icon": "🎭" }
-        ],
-        "backend": [
-            { "name": "Node.js", "level": 90, "icon": "🟢" },
-            { "name": "PHP", "level": 85, "icon": "🐘" },
-            { "name": "Express.js", "level": 88, "icon": "🚂" },
-            { "name": "Laravel", "level": 80, "icon": "⚡" },
-            { "name": "NestJS", "level": 85, "icon": "🦉" },
-            { "name": "GraphQL", "level": 82, "icon": "🔗" },
-            { "name": "REST APIs", "level": 92, "icon": "🔌" },
-            { "name": "MySQL", "level": 80, "icon": "🐬" },
-            { "name": "PostgreSQL", "level": 90, "icon": "🐘" },
-            { "name": "MongoDB", "level": 88, "icon": "🍃" }
-        ],
-        "tools": [
-            { "name": "Git", "level": 95, "icon": "📝" },
-            { "name": "Docker", "level": 85, "icon": "🐳" },
-            { "name": "AWS", "level": 80, "icon": "☁️" },
-            { "name": "Vercel", "level": 90, "icon": "▲" },
-            { "name": "Figma", "level": 75, "icon": "🎨" },
-            { "name": "VS Code", "level": 95, "icon": "💻" }
-        ]
-    },
-    "projects": [
-        {
-            "id": 1,
-            "title": "Social Media Platform",
-            "description": "A full-stack social media application built with Laravel and MySQL. Features include user authentication, posts, comments, likes, friend system, notifications, and real-time messaging using Laravel WebSockets.",
-            "image": "/social-network.png",
-            "technologies": ["Laravel", "MySQL", "Laravel WebSockets", "Tailwind CSS", "Livewire"],
-            "category": "Full Stack",
-            "featured": true,
-            "links": {
-                "live": "https://social-network-laravel-lh9vy.sevalla.app/",
-                "github": "https://github.com/nguyenhoangkha03/social-network"
-            },
-            "highlights": [
-                "Built with Laravel and RESTful APIs",
-                "Real-time chat using Laravel WebSockets",
-                "Friendship system with requests and suggestions",
-                "Interactive post feed with likes and comments",
-                "Notification system for likes, comments, and friend requests",
-                "Responsive UI with Tailwind CSS and Livewire"
-            ]
-        },
-        {
-            "id": 2,
-            "title": "Badminton Shop E-commerce",
-            "description": "A full-stack e-commerce platform specialized in badminton equipment with AI-powered shopping assistant,secure payment processing, and comprehensive admin dashboard for managing products and orders.",
-            "image": "/ecommerce.png",
-            "technologies": ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Sequelize", "Redux Toolkit", "Tailwind CSS", "Google Generative AI", "Stripe", "JWT"],
-            "category": "Full Stack",
-            "featured": true,
-            "links": {
-                "live": "https://badminton-shop-beta.vercel.app/",
-                "github": "https://github.com/nguyenhoangkha03/ecommerce-backend-k"
-            },
-            "highlights": [
-                "AI-powered shopping assistant using Google Generative AI for product recommendations",
-                "Secure authentication system with JWT and email verification",
-                "Real-time inventory management with PostgreSQL and Sequelize ORM",
-                "Responsive UI with Tailwind CSS and modern glassmorphism design",
-                "Integrated payment processing with Stripe and multiple payment methods",
-                "Multi-language support with i18next internationalization",
-                "Admin dashboard for product, order, and user management",
-                "Advanced product filtering, searching, and wishlist functionality",
-                "Customer reviews and ratings system with feedback management",
-                "Performance optimized with Redis caching and image lazy loading"
-            ]
-        },
-        {
-            "id": 3,
-            "title": "Contract Management System",
-            "description": "A full-stack enterprise contract management platform with automated workflows, role-based permissions, document generation, and real-time analytics built with Laravel and Filament.",
-            "image": "/contract.png",
-            "technologies": [
-                "Laravel 11",
-                "PHP 8.2",
-                "Filament 3.3",
-                "MySQL",
-                "Livewire",
-                "Tailwind CSS",
-                "PHPWord",
-                "Maatwebsite Excel",
-                "Vite",
-                "CloudFlare"
-            ],
-            "category": "Full Stack",
-            "featured": true,
-            "links": {
-                "live": "https://contract-management-0g84l.sevalla.app/",
-                "github": "https://github.com/nguyenhoangkha03/contract-management"
-            },
-            "highlights": [
-                "Advanced role-based access control with 6 roles and 15 granular permission features",
-                "Automated multi-stage workflow with 6 contract statuses and intelligent notifications",
-                "Dynamic Word document generation with Vietnamese text support and custom templates",
-                "Real-time analytics dashboard tracking contract values, payments, and expiration dates",
-                "Comprehensive financial management with automated payment and liquidation tracking",
-                "Multi-party contract handling with customizable terms, products, and legal clauses",
-                "Intelligent supervisor assignment system based on contract types and roles",
-                "Secure authentication with database sessions and CloudFlare proxy integration",
-                "Professional admin interface built with Filament 3 featuring dark mode design",
-                "Advanced filtering, search, and export capabilities for all contract data"
-            ]
-        },
-        {
-            "id": 4,
-            "title": "Car Repair Management System",
-            "description": "A comprehensive full-stack car repair management platform with real-time appointment booking, service tracking, and customer management system for automotive repair shops.",
-            "image": "/car-repair.png",
-            "technologies": ["React", "Next.js", "TypeScript", "Node.js", "Express", "MySQL", "Socket.io", "React Native"],
-            "category": "Full Stack",
-            "featured": true,
-            "links": {
-                "live": "https://sua-xe-hong-hau.vercel.app/",
-                "github": "https://github.com/akaisui/car-repair-backend"
-            },
-            "highlights": [
-                "Real-time appointment booking and status tracking system",
-                "Comprehensive dashboard for repair history and invoicing",
-                "Push notifications for repair status updates",
-                "Mobile app for technicians using React Native",
-                "Role-based access control for customers, technicians, and admins",
-                "Integrated rewards and loyalty program",
-                "Email and SMS notification services",
-                "Advanced search and filtering for services and appointments"
-            ]
-        },
-            {
-            "id": 5,
-            "title": "TikTok Clone",
-            "description": "A full-stack short video sharing platform with WebRTC livestream, real-time messaging, intelligent recommendation system, and complete social media interaction features.",
-            "image": "/tiktok-clone.png",
-            "technologies": ["Laravel", "Alpine.js", "MySQL", "Tailwind CSS", "WebRTC", "Pusher", "FFmpeg"],
-            "category": "Full Stack",
-            "featured": true,
-            "links": {
-                "live": "https://tiktok-clone-8qk36.sevalla.app/",
-                "github": "https://github.com/nguyenhoangkha03/tiktok-clone"
-            },
-            "highlights": [
-                "Real-time livestream with WebRTC and P2P connection management",
-                "Direct messaging system with real-time notifications via Laravel Echo",
-                "Smart video recommendation algorithm based on engagement and watch history",
-                "Automatic video upload and thumbnail generation with FFmpeg",
-                "Complete interaction features: like, comment, share, favorite, follow"
-            ]
-        },
-        {
-            "id": 6,
-            "title": "Weather App",
-            "description": "A beautiful and responsive weather application with real-time weather data, modern glass morphism design, and intuitive user interface for checking weather conditions worldwide.",
-            "image": "/weather-app.png",
-            "technologies": ["React", "TypeScript", "OpenWeatherMap API", "CSS3"],
-            "category": "Frontend",
-            "featured": true,
-            "links": {
-                "live": "https://weather-app-two-jade-99.vercel.app/",
-                "github": "https://github.com/nguyenhoangkha03/weather-app"
-            },
-            "highlights": [
-                "Modern glass morphism UI design with animated backgrounds",
-                "Real-time weather data integration with OpenWeatherMap API",
-                "Responsive design optimized for all devices",
-                "TypeScript for better code quality and development experience",
-                "Smooth animations and hover effects for enhanced UX"
-            ]
-        },
-         {
-            "id": 7,
-            "title": "Minimal Zen - Todo App",
-            "description": "A mindful task management app built with React, featuring Japanese Minimalism and Neumorphism design philosophy for peaceful and conscious productivity.",
-            "image": "/todo-app.png",
-            "technologies": ["React", "CSS3", "Neumorphism", "LocalStorage"],
-            "category": "Frontend",
-            "featured": true,
-            "links": {
-                "live": "https://todo-app-six-smoky-66.vercel.app/",
-                "github": "https://github.com/nguyenhoangkha03/todo-app"
-            },
-            "highlights": [
-                "Minimal Zen design with Japanese Neumorphism aesthetics",
-                "Animated SVG checkbox with stroke-dasharray drawing effect",
-                "Completed tasks display with blur effect instead of strikethrough",
-                "Floating Action Button (FAB) with rotation animation",
-                "Modal with backdrop blur and smooth scale-in transitions",
-                "Soft neumorphic shadows (inset + outset) on all elements",
-                "Animated gradient background shift (15s loop)",
-                "Custom scrollbar with gradient and rounded design",
-                "Nunito light-weight font (300-400) for gentle aesthetics",
-                "Pastel color palette: Sage green, Warm beige, Soft coral",
-                "Responsive design with generous spacing (40px+)",
-                "LocalStorage persistence - no data loss on refresh"
-            ]
-        },
-        {
-            "id": 8,
-            "title": "TaskFlow Pro - Kanban Board",
-            "description": "A modern Kanban project management app built with React, featuring glassmorphism design, smooth drag & drop, dark/light mode, and beautiful animation effects.",
-            "image": "/kanban-board.png",
-            "technologies": ["React", "Tailwind CSS", "Framer Motion", "@hello-pangea/dnd", "Vite", "LocalStorage"],
-            "category": "Frontend",
-            "featured": true,
-            "links": {
-                "live": "https://kanban-board-three-azure.vercel.app/",
-                "github": "https://github.com/nguyenhoangkha03/kanban-board"
-            },
-            "highlights": [
-                "Drag & drop tasks between columns with 3D animations",
-                "Dark/Light mode with gradient backgrounds and particles",
-                "Glassmorphism design with backdrop-blur effects",
-                "Task management with priority, tags, and descriptions",
-                "LocalStorage persistence – no data loss on refresh",
-                "Advanced animations powered by Framer Motion",
-                "Fully responsive for mobile and desktop devices",
-                "Floating action buttons with micro-interactions"
-            ]
-        }
+  "personal": {
+    "name": "Kha (Akaisui)",
+    "title": "Software Engineer",
+    "location": "Can Tho, Viet Nam",
+    "email": "nhoangkha03@gmail.com",
+    "phone": "+84 365 907 475",
+    "tagline": "Crafting digital experiences with modern technologies",
+    "bio": "A passionate software engineer with experience building scalable applications and high-performance systems. I enjoy turning complex problems into simple, beautiful, and intuitive solutions.",
+    "profileImage": "/assets/avatar.jpg",
+    "resume": "/Fullstack.pdf"
+  },
+  "social": {
+    "github": "https://github.com/nguyenhoangkha03",
+    "zalo": "https://zalo.me/0365907475",
+    "facebook": "https://www.facebook.com/NguyenHoangKha1910/",
+    "x": "https://x.com/akaisui3",
+    "instagram": "https://www.instagram.com/akaisui03/",
+    "website": "#",
+    "medium": "https://medium.com/@alexchen"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "hello": "Hello!",
+    "hi_im": "Hi, I'm",
+    "subtitle": "If the light is too dim, we'll become torches to guide each other",
+    "view_my_work": "View My Work",
+    "get_in_touch": "Get In Touch"
+  },
+  "about": {
+    "title": "About",
+    "me": "Me",
+    "subtitle": "Passionate about creating exceptional digital experiences with cutting-edge technologies",
+    "who_i_am": "Who I Am",
+    "location": "Location",
+    "experience": "Experience",
+    "experience_years": "1 Year",
+    "download_resume": "Download Resume",
+    "education_and_certifications": "Education & Certifications",
+    "certifications": "Certifications",
+    "technical_skills_title": "Technical",
+    "technical_skills_highlight": "Skills",
+    "technical_skills_subtitle": "Technologies and tools I work with",
+    "skills_languages": "Languages",
+    "skills_frontend": "Frontend",
+    "skills_backend": "Backend & Systems",
+    "skills_mobile": "Mobile",
+    "skills_tools": "Tools"
+  },
+  "projects_section": {
+    "title": "My",
+    "highlight": "Projects",
+    "subtitle": "A collection of projects I've worked on, from concept to completion",
+    "filter_by": "Filter by:",
+    "featured": "Featured",
+    "key_features": "Key Features:",
+    "more": "more",
+    "live_demo": "Live Demo",
+    "code": "Code",
+    "no_projects": "No projects found in this category.",
+    "view_all_on_github": "View All Projects on GitHub"
+  },
+  "experience_section": {
+    "title": "Work",
+    "highlight": "Experience",
+    "subtitle": "My professional journey and the impact I've made at each organization",
+    "key_achievements": "Key Achievements",
+    "technologies_used": "Technologies Used",
+    "next_challenge_title": "Ready for the Next Challenge",
+    "next_challenge_subtitle": "I'm always excited to take on new projects and collaborate with amazing teams. Let's build something incredible together!"
+  },
+  "contact_section": {
+    "title": "Get In",
+    "highlight": "Touch",
+    "subtitle": "Have a project in mind or want to collaborate? I'd love to hear from you!",
+    "form_title": "Send Me a Message",
+    "form_success": "Message sent successfully! I'll get back to you soon.",
+    "form_error": "Something went wrong. Please try again.",
+    "form_firstname": "First Name",
+    "form_firstname_error": "First name is required",
+    "form_firstname_placeholder": "John",
+    "form_lastname": "Last Name",
+    "form_lastname_error": "Last name is required",
+    "form_lastname_placeholder": "Doe",
+    "form_email": "Email",
+    "form_email_error": "Email is required",
+    "form_email_invalid": "Invalid email address",
+    "form_subject": "Subject",
+    "form_subject_error": "Subject is required",
+    "form_subject_placeholder": "Project Inquiry",
+    "form_message": "Message",
+    "form_message_error": "Message is required",
+    "form_message_minlength": "Message must be at least 10 characters",
+    "form_message_placeholder": "Tell me about your project...",
+    "form_sending": "Sending...",
+    "form_send_message": "Send Message",
+    "contact_info": "Contact Information",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "follow_me": "Follow Me",
+    "response_time": "I typically respond within 24 hours. Looking forward to hearing from you!"
+  },
+  "footer": {
+    "quick_links": "Quick Links",
+    "contact_info": "Contact Info",
+    "tagline_1": "If the light is too dim, we'll become",
+    "tagline_2": "torches to guide each other",
+    "back_to_top": "Back to top"
+  },
+  "skills": {
+    "languages": [
+      {
+        "name": "JavaScript",
+        "level": 95,
+        "icon": "SiJavascript"
+      },
+      {
+        "name": "TypeScript",
+        "level": 90,
+        "icon": "SiTypescript"
+      },
+      {
+        "name": "C++",
+        "level": 85,
+        "icon": "SiCplusplus"
+      },
+      {
+        "name": "C#",
+        "level": 88,
+        "icon": "SiDotnet"
+      },
+      {
+        "name": "Python",
+        "level": 92,
+        "icon": "SiPython"
+      },
+      {
+        "name": "Java",
+        "level": 85,
+        "icon": "FaJava"
+      },
+      {
+        "name": "PHP",
+        "level": 85,
+        "icon": "SiPhp"
+      }
     ],
-    "experience": [
-        {
-            "id": 1,
-            "company": "Freelance",
-            "position": "Full Stack Developer",
-            "duration": "2022 - 2025",
-            "location": "Remote",
-            "description": "Worked as a freelance full stack developer during university, building and delivering web applications for small businesses and individual clients. Responsible for both frontend and backend development, deployment, and maintenance.",
-            "achievements": [
-                "Designed and developed 5+ responsive business websites and SEO-optimized landing pages",
-                "Built custom content management systems tailored to client needs",
-                "Integrated online payment gateways such as VNPay and MoMo",
-                "Collaborated directly with clients to gather requirements and deliver solutions on time"
-            ],
-            "technologies": ["Next.js", "NestJS", "MySQL", "Tailwind CSS", "Firebase", "AWS S3"]
-        },
-        {
-            "id": 2,
-            "company": "Tay Do University",
-            "position": "Student Developer",
-            "duration": "2021 - 2025",
-            "location": "Can Tho, Vietnam",
-            "description": "Participated in various academic and team-based projects as part of the Computer Science program. Focused on building real-world applications and improving both technical and collaboration skills.",
-            "achievements": [
-                "Developed a full-featured Learning Management System (LMS) with course management, quizzes, and progress tracking",
-                "Built a student management application with RESTful API and JWT authentication",
-                "Led the backend team in multiple group projects following Agile/Scrum methodology",
-                "Implemented CI/CD pipelines using GitHub Actions to automate testing and deployment"
-            ],
-            "technologies": ["React.js", "Laravel", "PostgreSQL", "Docker", "GitHub Actions"]
-        }
+    "frontend": [
+      {
+        "name": "React",
+        "level": 95,
+        "icon": "SiReact"
+      },
+      {
+        "name": "Next.js",
+        "level": 88,
+        "icon": "SiNextdotjs"
+      },
+      {
+        "name": "Vue.js",
+        "level": 85,
+        "icon": "SiVuedotjs"
+      },
+      {
+        "name": "JavaScript",
+        "level": 95,
+        "icon": "SiJavascript"
+      },
+      {
+        "name": "Tailwind CSS",
+        "level": 92,
+        "icon": "SiTailwindcss"
+      },
+      {
+        "name": "Sass / SCSS",
+        "level": 90,
+        "icon": "SiSass"
+      },
+      {
+        "name": "Radix UI / shadcn/ui",
+        "level": 92,
+        "icon": "SiShadcnui"
+      },
+      {
+        "name": "Redux Toolkit / Zustand",
+        "level": 88,
+        "icon": "SiRedux"
+      },
+      {
+        "name": "Vite",
+        "level": 95,
+        "icon": "SiVite"
+      },
+      {
+        "name": "Framer Motion",
+        "level": 80,
+        "icon": "SiFramer"
+      }
     ],
-    "education": [
-        {
-            "institution": "Tay Do University, Can Tho, Viet Nam",
-            "degree": "Bachelor of Web Development",
-            "duration": "2021 - 2025",
-            "gpa": "3.8/4.0"
-        }
+    "backend": [
+      {
+        "name": "Node.js",
+        "level": 90,
+        "icon": "SiNodedotjs"
+      },
+      {
+        "name": "NestJS",
+        "level": 85,
+        "icon": "SiNestjs"
+      },
+      {
+        "name": "Express.js",
+        "level": 88,
+        "icon": "SiExpress"
+      },
+      {
+        "name": "PostgreSQL",
+        "level": 90,
+        "icon": "SiPostgresql"
+      },
+      {
+        "name": "Laravel",
+        "level": 80,
+        "icon": "SiLaravel"
+      },
+      {
+        "name": "MySQL",
+        "level": 80,
+        "icon": "SiMysql"
+      },
+      {
+        "name": "MongoDB",
+        "level": 88,
+        "icon": "SiMongodb"
+      },
+      {
+        "name": "FastAPI",
+        "level": 85,
+        "icon": "SiFastapi"
+      },
+      {
+        "name": "REST API / GraphQL",
+        "level": 92,
+        "icon": "SiGraphql"
+      },
+      {
+        "name": "Redis",
+        "level": 85,
+        "icon": "SiRedis"
+      },
+      {
+        "name": "ORM Tools (Prisma/Sequelize)",
+        "level": 90,
+        "icon": "SiPrisma"
+      },
+      {
+        "name": "Socket.io",
+        "level": 88,
+        "icon": "SiSocketdotio"
+      }
     ],
-    "certifications": [
-        {
-            "name": "Node.js Intermediate Certificate",
-            "issuer": "HackerRank",
-            "date": "2025"
-        },
-        {
-            "name": "DSA - Certificate",
-            "issuer": "Codelearn",
-            "date": "2025"
-        }
+    "mobile": [
+      {
+        "name": "React Native",
+        "level": 85,
+        "icon": "SiReact"
+      },
+      {
+        "name": "Flutter",
+        "level": 80,
+        "icon": "SiFlutter"
+      }
+    ],
+    "tools": [
+      {
+        "name": "Git",
+        "level": 95,
+        "icon": "SiGit"
+      },
+      {
+        "name": "Docker",
+        "level": 85,
+        "icon": "SiDocker"
+      },
+      {
+        "name": "AWS",
+        "level": 80,
+        "icon": "FaAws"
+      },
+      {
+        "name": "Vercel",
+        "level": 90,
+        "icon": "SiVercel"
+      },
+      {
+        "name": "Figma",
+        "level": 75,
+        "icon": "SiFigma"
+      },
+      {
+        "name": "GitHub / GitLab",
+        "level": 92,
+        "icon": "SiGithub"
+      },
+      {
+        "name": "Postman",
+        "level": 90,
+        "icon": "SiPostman"
+      },
+      {
+        "name": "Linux / Bash",
+        "level": 85,
+        "icon": "SiLinux"
+      },
+      {
+        "name": "AI Tools (ChatGPT, Claude, etc.)",
+        "level": 88,
+        "icon": "SiOpenai"
+      }
     ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Social Media Platform",
+      "description": "A full-stack social media application built with Laravel and MySQL. Features include user authentication, posts, comments, likes, friend system, notifications, and real-time messaging using Laravel WebSockets.",
+      "image": "/social-network.png",
+      "technologies": [
+        "Laravel",
+        "MySQL",
+        "Laravel WebSockets",
+        "Tailwind CSS",
+        "Livewire"
+      ],
+      "category": "Full Stack",
+      "featured": true,
+      "links": {
+        "live": "https://social-network-laravel-lh9vy.sevalla.app/",
+        "github": "https://github.com/nguyenhoangkha03/social-network"
+      },
+      "highlights": [
+        "Built with Laravel and RESTful APIs",
+        "Real-time chat using Laravel WebSockets",
+        "Friendship system with requests and suggestions",
+        "Interactive post feed with likes and comments",
+        "Notification system for likes, comments, and friend requests",
+        "Responsive UI with Tailwind CSS and Livewire"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Badminton Shop E-commerce",
+      "description": "A full-stack e-commerce platform specialized in badminton equipment with AI-powered shopping assistant,secure payment processing, and comprehensive admin dashboard for managing products and orders.",
+      "image": "/ecommerce.png",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "Sequelize",
+        "Redux Toolkit",
+        "Tailwind CSS",
+        "Google Generative AI",
+        "Stripe",
+        "JWT"
+      ],
+      "category": "Full Stack",
+      "featured": true,
+      "links": {
+        "live": "https://badminton-shop-beta.vercel.app/",
+        "github": "https://github.com/nguyenhoangkha03/ecommerce-backend-k"
+      },
+      "highlights": [
+        "AI-powered shopping assistant using Google Generative AI for product recommendations",
+        "Secure authentication system with JWT and email verification",
+        "Real-time inventory management with PostgreSQL and Sequelize ORM",
+        "Responsive UI with Tailwind CSS and modern glassmorphism design",
+        "Integrated payment processing with Stripe and multiple payment methods",
+        "Multi-language support with i18next internationalization",
+        "Admin dashboard for product, order, and user management",
+        "Advanced product filtering, searching, and wishlist functionality",
+        "Customer reviews and ratings system with feedback management",
+        "Performance optimized with Redis caching and image lazy loading"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Contract Management System",
+      "description": "A full-stack enterprise contract management platform with automated workflows, role-based permissions, document generation, and real-time analytics built with Laravel and Filament.",
+      "image": "/contract.png",
+      "technologies": [
+        "Laravel 11",
+        "PHP 8.2",
+        "Filament 3.3",
+        "MySQL",
+        "Livewire",
+        "Tailwind CSS",
+        "PHPWord",
+        "Maatwebsite Excel",
+        "Vite",
+        "CloudFlare"
+      ],
+      "category": "Full Stack",
+      "featured": true,
+      "links": {
+        "live": "https://contract-management-0g84l.sevalla.app/",
+        "github": "https://github.com/nguyenhoangkha03/contract-management"
+      },
+      "highlights": [
+        "Advanced role-based access control with 6 roles and 15 granular permission features",
+        "Automated multi-stage workflow with 6 contract statuses and intelligent notifications",
+        "Dynamic Word document generation with Vietnamese text support and custom templates",
+        "Real-time analytics dashboard tracking contract values, payments, and expiration dates",
+        "Comprehensive financial management with automated payment and liquidation tracking",
+        "Multi-party contract handling with customizable terms, products, and legal clauses",
+        "Intelligent supervisor assignment system based on contract types and roles",
+        "Secure authentication with database sessions and CloudFlare proxy integration",
+        "Professional admin interface built with Filament 3 featuring dark mode design",
+        "Advanced filtering, search, and export capabilities for all contract data"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Car Repair Management System",
+      "description": "A comprehensive full-stack car repair management platform with real-time appointment booking, service tracking, and customer management system for automotive repair shops.",
+      "image": "/car-repair.png",
+      "technologies": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "MySQL",
+        "Socket.io",
+        "React Native"
+      ],
+      "category": "Mobile",
+      "featured": true,
+      "links": {
+        "live": "https://sua-xe-hong-hau.vercel.app/",
+        "github": "https://github.com/akaisui/car-repair-backend"
+      },
+      "highlights": [
+        "Real-time appointment booking and status tracking system",
+        "Comprehensive dashboard for repair history and invoicing",
+        "Push notifications for repair status updates",
+        "Mobile app for technicians using React Native",
+        "Role-based access control for customers, technicians, and admins",
+        "Integrated rewards and loyalty program",
+        "Email and SMS notification services",
+        "Advanced search and filtering for services and appointments"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "TikTok Clone",
+      "description": "A full-stack short video sharing platform with WebRTC livestream, real-time messaging, intelligent recommendation system, and complete social media interaction features.",
+      "image": "/tiktok-clone.png",
+      "technologies": [
+        "Laravel",
+        "Alpine.js",
+        "MySQL",
+        "Tailwind CSS",
+        "WebRTC",
+        "Pusher",
+        "FFmpeg"
+      ],
+      "category": "Full Stack",
+      "featured": true,
+      "links": {
+        "live": "https://tiktok-clone-8qk36.sevalla.app/",
+        "github": "https://github.com/nguyenhoangkha03/tiktok-clone"
+      },
+      "highlights": [
+        "Real-time livestream with WebRTC and P2P connection management",
+        "Direct messaging system with real-time notifications via Laravel Echo",
+        "Smart video recommendation algorithm based on engagement and watch history",
+        "Automatic video upload and thumbnail generation with FFmpeg",
+        "Complete interaction features: like, comment, share, favorite, follow"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Weather App",
+      "description": "A beautiful and responsive weather application with real-time weather data, modern glass morphism design, and intuitive user interface for checking weather conditions worldwide.",
+      "image": "/weather-app.png",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "OpenWeatherMap API",
+        "CSS3"
+      ],
+      "category": "Frontend",
+      "featured": true,
+      "links": {
+        "live": "https://weather-app-two-jade-99.vercel.app/",
+        "github": "https://github.com/nguyenhoangkha03/weather-app"
+      },
+      "highlights": [
+        "Modern glass morphism UI design with animated backgrounds",
+        "Real-time weather data integration with OpenWeatherMap API",
+        "Responsive design optimized for all devices",
+        "TypeScript for better code quality and development experience",
+        "Smooth animations and hover effects for enhanced UX"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Minimal Zen - Todo App",
+      "description": "A mindful task management app built with React, featuring Japanese Minimalism and Neumorphism design philosophy for peaceful and conscious productivity.",
+      "image": "/todo-app.png",
+      "technologies": [
+        "React",
+        "CSS3",
+        "Neumorphism",
+        "LocalStorage"
+      ],
+      "category": "Frontend",
+      "featured": true,
+      "links": {
+        "live": "https://todo-app-six-smoky-66.vercel.app/",
+        "github": "https://github.com/nguyenhoangkha03/todo-app"
+      },
+      "highlights": [
+        "Minimal Zen design with Japanese Neumorphism aesthetics",
+        "Animated SVG checkbox with stroke-dasharray drawing effect",
+        "Completed tasks display with blur effect instead of strikethrough",
+        "Floating Action Button (FAB) with rotation animation",
+        "Modal with backdrop blur and smooth scale-in transitions",
+        "Soft neumorphic shadows (inset + outset) on all elements",
+        "Animated gradient background shift (15s loop)",
+        "Custom scrollbar with gradient and rounded design",
+        "Nunito light-weight font (300-400) for gentle aesthetics",
+        "Pastel color palette: Sage green, Warm beige, Soft coral",
+        "Responsive design with generous spacing (40px+)",
+        "LocalStorage persistence - no data loss on refresh"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "TaskFlow Pro - Kanban Board",
+      "description": "A modern Kanban project management app built with React, featuring glassmorphism design, smooth drag & drop, dark/light mode, and beautiful animation effects.",
+      "image": "/kanban-board.png",
+      "technologies": [
+        "React",
+        "Tailwind CSS",
+        "Framer Motion",
+        "@hello-pangea/dnd",
+        "Vite",
+        "LocalStorage"
+      ],
+      "category": "Frontend",
+      "featured": true,
+      "links": {
+        "live": "https://kanban-board-three-azure.vercel.app/",
+        "github": "https://github.com/nguyenhoangkha03/kanban-board"
+      },
+      "highlights": [
+        "Drag & drop tasks between columns with 3D animations",
+        "Dark/Light mode with gradient backgrounds and particles",
+        "Glassmorphism design with backdrop-blur effects",
+        "Task management with priority, tags, and descriptions",
+        "LocalStorage persistence – no data loss on refresh",
+        "Advanced animations powered by Framer Motion",
+        "Fully responsive for mobile and desktop devices",
+        "Floating action buttons with micro-interactions"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "High-Performance API Service",
+      "description": "A robust backend system built with FastAPI and Redis, featuring distributed task queues, real-time analytics, and optimized database performance for high-traffic applications.",
+      "image": "/backend-api.png",
+      "technologies": [
+        "FastAPI",
+        "Python",
+        "Redis",
+        "PostgreSQL",
+        "Docker",
+        "RabbitMQ",
+        "Celery"
+      ],
+      "category": "Backend / Systems",
+      "featured": true,
+      "links": {
+        "live": "#",
+        "github": "https://github.com/nguyenhoangkha03/fastapi-backend"
+      },
+      "highlights": [
+        "Scalable microservices architecture with FastAPI",
+        "Asynchronous task processing using Celery and RabbitMQ",
+        "Real-time data caching and session management with Redis",
+        "Advanced performance monitoring and logging system",
+        "Automated API documentation with Swagger/OpenAPI"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "company": "Freelance",
+      "position": "Software Engineer",
+      "duration": "2022 - 2025",
+      "location": "Remote",
+      "description": "Worked as a freelance software engineer during university, building and delivering robust software solutions for small businesses and clients. Responsible for full-cycle development, from system architecture to deployment and maintenance.",
+      "achievements": [
+        "Designed and developed 5+ responsive business websites and SEO-optimized landing pages",
+        "Built custom content management systems tailored to client needs",
+        "Integrated online payment gateways such as VNPay and MoMo",
+        "Collaborated directly with clients to gather requirements and deliver solutions on time"
+      ],
+      "technologies": [
+        "Next.js",
+        "NestJS",
+        "MySQL",
+        "Tailwind CSS",
+        "Firebase",
+        "AWS S3"
+      ]
+    },
+    {
+      "id": 2,
+      "company": "Tay Do University",
+      "position": "Student Developer",
+      "duration": "2021 - 2025",
+      "location": "Can Tho, Vietnam",
+      "description": "Participated in various academic and team-based projects as part of the Computer Science program. Focused on building real-world applications and improving both technical and collaboration skills.",
+      "achievements": [
+        "Developed a full-featured Learning Management System (LMS) with course management, quizzes, and progress tracking",
+        "Built a student management application with RESTful API and JWT authentication",
+        "Led the backend team in multiple group projects following Agile/Scrum methodology",
+        "Implemented CI/CD pipelines using GitHub Actions to automate testing and deployment"
+      ],
+      "technologies": [
+        "React.js",
+        "Laravel",
+        "PostgreSQL",
+        "Docker",
+        "GitHub Actions"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Tay Do University, Can Tho, Viet Nam",
+      "degree": "Bachelor of Software Engineering",
+      "duration": "2021 - 2025",
+      "gpa": "3.8/4.0"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Node.js Intermediate Certificate",
+      "issuer": "HackerRank",
+      "date": "2025"
+    },
+    {
+      "name": "DSA - Certificate",
+      "issuer": "Codelearn",
+      "date": "2025"
+    }
+  ]
 }

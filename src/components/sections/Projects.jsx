@@ -63,10 +63,10 @@ const Projects = () => {
                     </motion.div>
 
                     <motion.div
-                        className="flex flex-wrap justify-center gap-4 mb-12"
+                        className="flex flex-wrap justify-center items-center gap-4 mb-12"
                         variants={itemVariants}
                     >
-                        <div className="flex items-center space-x-2 mb-4">
+                        <div className="flex items-center space-x-2">
                             <Filter
                                 size={20}
                                 className="text-gray-600 dark:text-gray-400"
@@ -76,19 +76,21 @@ const Projects = () => {
                             </span>
                         </div>
 
-                        {categories.map((category) => (
-                            <button
-                                key={category}
-                                onClick={() => setActiveFilter(category)}
-                                className={`px-4 py-2 rounded-lg font-semibold transition-all duration-300 cursor-target ${
-                                    activeFilter === category
-                                        ? "bg-primary-600 text-white shadow-lg transform scale-105"
-                                        : "bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
-                                }`}
-                            >
-                                {category}
-                            </button>
-                        ))}
+                        <div className="flex flex-wrap justify-center gap-4">
+                            {categories.map((category) => (
+                                <button
+                                    key={category}
+                                    onClick={() => setActiveFilter(category)}
+                                    className={`px-4 py-2 rounded-lg font-semibold transition-all duration-300 cursor-target ${
+                                        activeFilter === category
+                                            ? "bg-primary-600 text-white shadow-lg transform scale-105"
+                                            : "bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
+                                    }`}
+                                >
+                                    {category}
+                                </button>
+                            ))}
+                        </div>
                     </motion.div>
 
                     <AnimatePresence mode="wait">
