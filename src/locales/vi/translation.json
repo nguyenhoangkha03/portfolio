@@ -329,29 +329,29 @@
   "projects": [
     {
       "id": 1,
-      "title": "Nền tảng Mạng xã hội",
-      "description": "Một ứng dụng mạng xã hội full-stack được xây dựng bằng Laravel và MySQL. Các tính năng bao gồm xác thực người dùng, bài đăng, bình luận, lượt thích, hệ thống bạn bè, thông báo và nhắn tin thời gian thực bằng Laravel WebSockets.",
-      "image": "/social-network.png",
+      "title": "Nebula Study - Nền tảng Học tập AI",
+      "description": "Một nền tảng giáo dục tích hợp AI toàn diện với 7 công cụ chuyên biệt giúp tối ưu hóa hiệu quả học tập. Hệ thống bao gồm Flashcard tự động với Spaced Repetition, giải bài tập từng bước, luyện đề thi tự động và tóm tắt tài liệu bằng AI dành cho học sinh, sinh viên và người đi làm.",
+      "image": "/nebula-study.png",
       "technologies": [
-        "Laravel",
-        "MySQL",
-        "Laravel WebSockets",
+        "Next.js",
+        "Node.js",
+        "PostgreSQL",
+        "Socket.io",
         "Tailwind CSS",
-        "Livewire"
+        "TypeScript"
       ],
       "category": "Full Stack",
       "featured": true,
       "links": {
-        "live": "https://social-network-laravel-lh9vy.sevalla.app/",
-        "github": "https://github.com/nguyenhoangkha03/social-network"
+        "live": "https://nebulastudy.vercel.app/"
       },
       "highlights": [
-        "Được xây dựng với Laravel và RESTful API",
-        "Trò chuyện thời gian thực bằng Laravel WebSockets",
-        "Hệ thống bạn bè với các yêu cầu và đề xuất",
-        "Bảng tin tương tác với lượt thích và bình luận",
-        "Hệ thống thông báo cho lượt thích, bình luận và yêu cầu kết bạn",
-        "Giao diện người dùng đáp ứng với Tailwind CSS và Livewire"
+        "Hệ sinh thái học tập toàn diện với 7 module hỗ trợ bởi AI",
+        "Hệ thống Flashcard ghi nhớ lâu với thuật toán Spaced Repetition",
+        "Giải bài tập tương tác từng bước thông qua mô hình Gemini AI",
+        "Tính năng cộng tác và trò chuyện học tập thời gian thực qua Socket.io",
+        "Phân tích tài liệu PDF và tóm tắt nội dung thông minh bằng AI",
+        "Kiến trúc full-stack hiện đại, tối ưu hiệu suất với Next.js và PostgreSQL"
       ]
     },
     {
@@ -375,8 +375,8 @@
       "category": "Full Stack",
       "featured": true,
       "links": {
-        "live": "https://badminton-shop-beta.vercel.app/",
-        "github": "https://github.com/nguyenhoangkha03/ecommerce-backend-k"
+        "live": "https://badmintonshop.vercel.app/",
+        "github": "https://github.com/nguyenhoangkha03/badminton-shop"
       },
       "highlights": [
         "Trợ lý mua sắm được hỗ trợ bởi AI sử dụng Google Generative AI để đề xuất sản phẩm",
@@ -393,6 +393,35 @@
     },
     {
       "id": 3,
+      "title": "Hệ thống Quản lý Bệnh viện (HMS)",
+      "description": "Một giải pháp quản lý bệnh viện full-stack toàn diện được thiết kế để tối ưu hóa quy trình vận hành y tế. Hệ thống bao gồm phân quyền người dùng (RBAC) chặt chẽ, quản lý bệnh nhân và bác sĩ, đặt lịch khám, hồ sơ bệnh án, hóa đơn và cập nhật thời gian thực giúp nâng cao hiệu quả làm việc nội bộ.",
+      "image": "/hospital-management.png",
+      "technologies": [
+        "Next.js 14",
+        "Node.js",
+        "PostgreSQL",
+        "Prisma ORM",
+        "Socket.io",
+        "Tailwind CSS",
+        "TypeScript"
+      ],
+      "category": "Full Stack",
+      "featured": true,
+      "links": {
+        "live": "https://quanlybv.vercel.app/",
+        "github": "https://github.com/nguyenhoangkha03/hospital-management"
+      },
+      "highlights": [
+        "Hệ thống quản lý nội bộ bệnh viện full-stack sẵn sàng cho triển khai",
+        "Phân quyền người dùng (RBAC) chi tiết cho Admin, Bác sĩ, Y tá và Nhân viên",
+        "Quản lý toàn diện Bệnh nhân, Lịch hẹn và Hồ sơ bệnh án điện tử",
+        "Tự động hóa quy trình xuất hóa đơn và theo dõi kho thuốc",
+        "Thông báo và cập nhật trạng thái thời gian thực bằng Socket.io",
+        "Giao diện hiện đại, tối ưu trải nghiệm với Next.js 14 và Tailwind CSS"
+      ]
+    },
+    {
+      "id": 4,
       "title": "Hệ Thống Quản Lý Hợp Đồng",
       "description": "Nền tảng quản lý hợp đồng doanh nghiệp full-stack với quy trình tự động hóa, phân quyền theo vai trò, tạo tài liệu và phân tích thời gian thực được xây dựng bằng Laravel và Filament.",
       "image": "/contract.png",
@@ -428,7 +457,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Hệ thống quản lý sửa chữa ô tô",
       "description": "Một nền tảng quản lý sửa chữa ô tô full-stack toàn diện với đặt lịch hẹn thời gian thực, theo dõi dịch vụ và hệ thống quản lý khách hàng cho các cửa hàng sửa chữa ô tô.",
       "image": "/car-repair.png",
@@ -460,7 +489,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "TikTok Clone",
       "description": "Một nền tảng chia sẻ video ngắn full-stack với livestream WebRTC, tin nhắn thời gian thực, hệ thống gợi ý thông minh và các tính năng tương tác mạng xã hội hoàn chỉnh.",
       "image": "/tiktok-clone.png",
@@ -488,7 +517,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "Ứng dụng thời tiết",
       "description": "Một ứng dụng thời tiết đẹp và đáp ứng với dữ liệu thời tiết thời gian thực, thiết kế glassmorphism hiện đại và giao diện người dùng trực quan để kiểm tra điều kiện thời tiết trên toàn thế giới.",
       "image": "/weather-app.png",
@@ -513,7 +542,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "Minimal Zen - Ứng dụng Todo",
       "description": "Ứng dụng quản lý công việc theo triết lý tối giản Nhật Bản, được xây dựng bằng React với thiết kế Neumorphism, mang đến trải nghiệm yên bình và năng suất có ý thức.",
       "image": "/todo-app.png",
@@ -545,7 +574,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 9,
       "title": "TaskFlow Pro - Bảng Kanban",
       "description": "Một ứng dụng quản lý dự án Kanban hiện đại được xây dựng bằng React, có thiết kế glassmorphism, kéo và thả mượt mà, chế độ tối/sáng và hiệu ứng hoạt hình đẹp mắt.",
       "image": "/kanban-board.png",
@@ -575,7 +604,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 10,
       "title": "Hệ thống API hiệu năng cao",
       "description": "Hệ thống backend mạnh mẽ được xây dựng bằng FastAPI và Redis, hỗ trợ hàng đợi tác vụ phân tán, phân tích thời gian thực và tối ưu hóa hiệu suất cơ sở dữ liệu cho ứng dụng chịu tải cao.",
       "image": "/backend-api.png",
@@ -605,34 +634,12 @@
   ],
   "experience": [
     {
-      "id": 1,
-      "company": "Freelance",
-      "position": "Kỹ sư phần mềm",
-      "duration": "2022 - 2025",
-      "location": "Làm việc từ xa",
-      "description": "Làm việc với tư cách là một kỹ sư phần mềm tự do trong thời gian học đại học, xây dựng và cung cấp các giải pháp phần mềm mạnh mẽ cho các doanh nghiệp và cá nhân. Chịu trách nhiệm toàn bộ chu trình phát triển, từ kiến trúc hệ thống đến triển khai và bảo trì.",
-      "achievements": [
-        "Thiết kế và phát triển hơn 5 trang web doanh nghiệp đáp ứng và các trang đích được tối ưu hóa SEO",
-        "Xây dựng các hệ thống quản lý nội dung tùy chỉnh phù hợp với nhu cầu của khách hàng",
-        "Tích hợp các cổng thanh toán trực tuyến như VNPay và MoMo",
-        "Hợp tác trực tiếp với khách hàng để thu thập yêu cầu và cung cấp giải pháp đúng hạn"
-      ],
-      "technologies": [
-        "Next.js",
-        "NestJS",
-        "MySQL",
-        "Tailwind CSS",
-        "Firebase",
-        "AWS S3"
-      ]
-    },
-    {
       "id": 2,
       "company": "Đại học Tây Đô",
-      "position": "Sinh viên phát triển",
+      "position": "Sinh viên Kỹ thuật Phần mềm",
       "duration": "2021 - 2025",
       "location": "Cần Thơ, Việt Nam",
-      "description": "Tham gia vào các dự án học thuật và nhóm khác nhau trong chương trình Khoa học Máy tính. Tập trung vào việc xây dựng các ứng dụng trong thế giới thực và cải thiện cả kỹ năng kỹ thuật và hợp tác.",
+      "description": "Tham gia vào các dự án học thuật và nhóm khác nhau trong chương trình Kỹ thuật Phần mềm. Tập trung vào việc xây dựng các ứng dụng trong thế giới thực và cải thiện cả kỹ năng kỹ thuật và hợp tác.",
       "achievements": [
         "Phát triển một Hệ thống Quản lý Học tập (LMS) đầy đủ tính năng với quản lý khóa học, câu đố và theo dõi tiến độ",
         "Xây dựng một ứng dụng quản lý sinh viên với RESTful API và xác thực JWT",
@@ -640,11 +647,69 @@
         "Triển khai các đường ống CI/CD bằng GitHub Actions để tự động hóa việc kiểm thử và triển khai"
       ],
       "technologies": [
+        "Node.js",
+        "NestJS",
+        "FastAPI",
         "React.js",
+        "Next.js",
         "Laravel",
-        "PostgreSQL",
         "Docker",
-        "GitHub Actions"
+        "GitHub Actions",
+        "PostgreSQL",
+        "MySQL"
+      ]
+    },
+    {
+      "id": 1,
+      "company": "Freelance",
+      "position": "Kỹ sư phần mềm",
+      "duration": "2025 - Hiện tại",
+      "location": "Làm việc từ xa",
+      "description": "Làm việc với tư cách là một kỹ sư phần mềm tự do từ trong thời gian học đại học đến hiện tại, xây dựng và cung cấp các giải pháp phần mềm mạnh mẽ cho các doanh nghiệp và cá nhân. Chịu trách nhiệm toàn bộ chu trình phát triển, từ kiến trúc hệ thống đến triển khai và bảo trì.",
+      "achievements": [
+        "Thiết kế và phát triển hơn 5 trang web doanh nghiệp đáp ứng và các trang đích được tối ưu hóa SEO",
+        "Xây dựng các hệ thống quản lý nội dung tùy chỉnh phù hợp với nhu cầu của khách hàng",
+        "Tích hợp các cổng thanh toán trực tuyến như VNPay và MoMo",
+        "Hợp tác trực tiếp với khách hàng để thu thập yêu cầu và cung cấp giải pháp đúng hạn"
+      ],
+      "technologies": [
+        "Node.js",
+        "NestJS",
+        "React.js",
+        "Next.js",
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "Docker",
+        "Firebase",
+        "AWS"
+      ]
+    },
+    {
+      "id": 3,
+      "company": "Katec",
+      "position": "Kỹ sư phần mềm",
+      "duration": "2026 - Hiện tại",
+      "location": "Việt Nam",
+      "description": "Chịu trách nhiệm phát triển và bảo trì các ứng dụng phần mềm quy mô lớn, tối ưu hóa quy trình làm việc và áp dụng các công nghệ mới nhất để giải quyết các vấn đề kinh doanh phức tạp.",
+      "achievements": [
+        "Thiết kế và triển khai các kiến trúc microservices có khả năng mở rộng cao",
+        "Tối ưu hóa hiệu suất cơ sở dữ liệu và giảm thời gian phản hồi API đáng kể",
+        "Xây dựng các quy trình CI/CD tự động giúp rút ngắn thời gian triển khai sản phẩm",
+        "Hợp tác chặt chẽ với đội ngũ thiết kế và quản lý sản phẩm để tạo ra trải nghiệm người dùng tối ưu"
+      ],
+      "technologies": [
+        "Node.js",
+        "NestJS",
+        "FastAPI",
+        "React.js",
+        "Next.js",
+        "PostgreSQL",
+        "Redis",
+        "Docker",
+        "AWS",
+        "Kubernetes"
       ]
     }
   ],

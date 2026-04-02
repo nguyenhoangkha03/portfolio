@@ -121,24 +121,28 @@ const Projects = () => {
                                                 className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                                             />
                                             <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
-                                                <Button
-                                                    variant="ghost"
-                                                    size="sm"
-                                                    href={project.links.live}
-                                                    target="_blank"
-                                                    className="bg-white text-gray-900 hover:bg-gray-100"
-                                                >
-                                                    <ExternalLink size={16} />
-                                                </Button>
-                                                <Button
-                                                    variant="ghost"
-                                                    size="sm"
-                                                    href={project.links.github}
-                                                    target="_blank"
-                                                    className="bg-white text-gray-900 hover:bg-gray-100"
-                                                >
-                                                    <Github size={16} />
-                                                </Button>
+                                                {project.links.live && project.links.live !== "#" && (
+                                                    <Button
+                                                        variant="ghost"
+                                                        size="sm"
+                                                        href={project.links.live}
+                                                        target="_blank"
+                                                        className="bg-white text-gray-900 hover:bg-gray-100"
+                                                    >
+                                                        <ExternalLink size={16} />
+                                                    </Button>
+                                                )}
+                                                {project.links.github && (
+                                                    <Button
+                                                        variant="ghost"
+                                                        size="sm"
+                                                        href={project.links.github}
+                                                        target="_blank"
+                                                        className="bg-white text-gray-900 hover:bg-gray-100"
+                                                    >
+                                                        <Github size={16} />
+                                                    </Button>
+                                                )}
                                             </div>
 
                                             {project.featured && (
@@ -211,33 +215,37 @@ const Projects = () => {
                                                 )}
                                             </div>
 
-                                            <div className="flex space-x-3">
-                                                <Button
-                                                    variant="primary"
-                                                    size="sm"
-                                                    href={project.links.live}
-                                                    target="_blank"
-                                                    className="flex-1"
-                                                >
-                                                    <ExternalLink
-                                                        size={14}
-                                                        className="mr-1"
-                                                    />
-                                                    {t('projects_section.live_demo')}
-                                                </Button>
-                                                <Button
-                                                    variant="outline"
-                                                    size="sm"
-                                                    href={project.links.github}
-                                                    target="_blank"
-                                                    className="flex-1"
-                                                >
-                                                    <Github
-                                                        size={14}
-                                                        className="mr-1"
-                                                    />
-                                                    {t('projects_section.code')}
-                                                </Button>
+                                             <div className="flex space-x-3">
+                                                {project.links.live && project.links.live !== "#" && (
+                                                    <Button
+                                                        variant="primary"
+                                                        size="sm"
+                                                        href={project.links.live}
+                                                        target="_blank"
+                                                        className="flex-1"
+                                                    >
+                                                        <ExternalLink
+                                                            size={14}
+                                                            className="mr-1"
+                                                        />
+                                                        {t('projects_section.live_demo')}
+                                                    </Button>
+                                                )}
+                                                {project.links.github && (
+                                                    <Button
+                                                        variant="outline"
+                                                        size="sm"
+                                                        href={project.links.github}
+                                                        target="_blank"
+                                                        className="flex-1"
+                                                    >
+                                                        <Github
+                                                            size={14}
+                                                            className="mr-1"
+                                                        />
+                                                        {t('projects_section.code')}
+                                                    </Button>
+                                                )}
                                             </div>
                                         </div>
                                     </Card>

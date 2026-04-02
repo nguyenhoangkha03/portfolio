@@ -329,29 +329,29 @@
   "projects": [
     {
       "id": 1,
-      "title": "Social Media Platform",
-      "description": "A full-stack social media application built with Laravel and MySQL. Features include user authentication, posts, comments, likes, friend system, notifications, and real-time messaging using Laravel WebSockets.",
-      "image": "/social-network.png",
+      "title": "Nebula Study - AI Learning Platform",
+      "description": "A comprehensive AI-powered educational platform featuring 7 specialized tools to enhance learning efficiency. It includes AI-generated flashcards with spaced repetition, step-by-step problem solvers, automated exam practice, and AI-driven summarization for students and professionals.",
+      "image": "/nebula-study.png",
       "technologies": [
-        "Laravel",
-        "MySQL",
-        "Laravel WebSockets",
+        "Next.js",
+        "Node.js",
+        "PostgreSQL",
+        "Socket.io",
         "Tailwind CSS",
-        "Livewire"
+        "TypeScript"
       ],
       "category": "Full Stack",
       "featured": true,
       "links": {
-        "live": "https://social-network-laravel-lh9vy.sevalla.app/",
-        "github": "https://github.com/nguyenhoangkha03/social-network"
+        "live": "https://nebulastudy.vercel.app/"
       },
       "highlights": [
-        "Built with Laravel and RESTful APIs",
-        "Real-time chat using Laravel WebSockets",
-        "Friendship system with requests and suggestions",
-        "Interactive post feed with likes and comments",
-        "Notification system for likes, comments, and friend requests",
-        "Responsive UI with Tailwind CSS and Livewire"
+        "AI-powered ecosystem with 7 specialized learning modules",
+        "Spaced Repetition algorithm for personalized Flashcard retention",
+        "Interactive step-by-step problem solving solutions via Gemini AI",
+        "Real-time collaboration and study chat using Socket.io",
+        "Automated PDF analysis and smart summarization tools",
+        "Scalable architecture with Next.js and PostgreSQL"
       ]
     },
     {
@@ -375,8 +375,8 @@
       "category": "Full Stack",
       "featured": true,
       "links": {
-        "live": "https://badminton-shop-beta.vercel.app/",
-        "github": "https://github.com/nguyenhoangkha03/ecommerce-backend-k"
+        "live": "https://badmintonshop.vercel.app/",
+        "github": "https://github.com/nguyenhoangkha03/badminton-shop"
       },
       "highlights": [
         "AI-powered shopping assistant using Google Generative AI for product recommendations",
@@ -393,6 +393,35 @@
     },
     {
       "id": 3,
+      "title": "Hospital Management System (HMS)",
+      "description": "A comprehensive, full-stack hospital management solution designed to streamline healthcare operations. It features a robust role-based access control system (RBAC), patient and doctor management, appointment scheduling, medical records, billing, and real-time updates for efficient hospital internal workflows.",
+      "image": "/hospital-management.png",
+      "technologies": [
+        "Next.js 14",
+        "Node.js",
+        "PostgreSQL",
+        "Prisma ORM",
+        "Socket.io",
+        "Tailwind CSS",
+        "TypeScript"
+      ],
+      "category": "Full Stack",
+      "featured": true,
+      "links": {
+        "live": "https://quanlybv.vercel.app/",
+        "github": "https://github.com/nguyenhoangkha03/hospital-management"
+      },
+      "highlights": [
+        "Production-ready internal hospital management system",
+        "Role-Based Access Control (RBAC) for Admin, Doctor, Nurse, and staff",
+        "Comprehensive management of Patients, Appointments, and Medical Records",
+        "Automated billing system and medicine inventory tracking",
+        "Real-time notifications and system updates using Socket.io",
+        "Modern UI/UX built with Next.js 14 and Tailwind CSS"
+      ]
+    },
+    {
+      "id": 4,
       "title": "Contract Management System",
       "description": "A full-stack enterprise contract management platform with automated workflows, role-based permissions, document generation, and real-time analytics built with Laravel and Filament.",
       "image": "/contract.png",
@@ -428,7 +457,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Car Repair Management System",
       "description": "A comprehensive full-stack car repair management platform with real-time appointment booking, service tracking, and customer management system for automotive repair shops.",
       "image": "/car-repair.png",
@@ -460,7 +489,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "TikTok Clone",
       "description": "A full-stack short video sharing platform with WebRTC livestream, real-time messaging, intelligent recommendation system, and complete social media interaction features.",
       "image": "/tiktok-clone.png",
@@ -488,7 +517,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "Weather App",
       "description": "A beautiful and responsive weather application with real-time weather data, modern glass morphism design, and intuitive user interface for checking weather conditions worldwide.",
       "image": "/weather-app.png",
@@ -513,7 +542,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "Minimal Zen - Todo App",
       "description": "A mindful task management app built with React, featuring Japanese Minimalism and Neumorphism design philosophy for peaceful and conscious productivity.",
       "image": "/todo-app.png",
@@ -545,7 +574,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 9,
       "title": "TaskFlow Pro - Kanban Board",
       "description": "A modern Kanban project management app built with React, featuring glassmorphism design, smooth drag & drop, dark/light mode, and beautiful animation effects.",
       "image": "/kanban-board.png",
@@ -575,7 +604,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 10,
       "title": "High-Performance API Service",
       "description": "A robust backend system built with FastAPI and Redis, featuring distributed task queues, real-time analytics, and optimized database performance for high-traffic applications.",
       "image": "/backend-api.png",
@@ -605,34 +634,12 @@
   ],
   "experience": [
     {
-      "id": 1,
-      "company": "Freelance",
-      "position": "Software Engineer",
-      "duration": "2022 - 2025",
-      "location": "Remote",
-      "description": "Worked as a freelance software engineer during university, building and delivering robust software solutions for small businesses and clients. Responsible for full-cycle development, from system architecture to deployment and maintenance.",
-      "achievements": [
-        "Designed and developed 5+ responsive business websites and SEO-optimized landing pages",
-        "Built custom content management systems tailored to client needs",
-        "Integrated online payment gateways such as VNPay and MoMo",
-        "Collaborated directly with clients to gather requirements and deliver solutions on time"
-      ],
-      "technologies": [
-        "Next.js",
-        "NestJS",
-        "MySQL",
-        "Tailwind CSS",
-        "Firebase",
-        "AWS S3"
-      ]
-    },
-    {
       "id": 2,
       "company": "Tay Do University",
-      "position": "Student Developer",
+      "position": "Software Engineering Student",
       "duration": "2021 - 2025",
       "location": "Can Tho, Vietnam",
-      "description": "Participated in various academic and team-based projects as part of the Computer Science program. Focused on building real-world applications and improving both technical and collaboration skills.",
+      "description": "Participated in various academic and team-based projects as part of the Software Engineering program. Focused on building real-world applications and improving both technical and collaboration skills.",
       "achievements": [
         "Developed a full-featured Learning Management System (LMS) with course management, quizzes, and progress tracking",
         "Built a student management application with RESTful API and JWT authentication",
@@ -640,11 +647,69 @@
         "Implemented CI/CD pipelines using GitHub Actions to automate testing and deployment"
       ],
       "technologies": [
+        "Node.js",
+        "NestJS",
+        "FastAPI",
         "React.js",
+        "Next.js",
         "Laravel",
-        "PostgreSQL",
         "Docker",
-        "GitHub Actions"
+        "GitHub Actions",
+        "PostgreSQL",
+        "MySQL"
+      ]
+    },
+    {
+      "id": 1,
+      "company": "Freelance",
+      "position": "Software Engineer",
+      "duration": "2025 - Present",
+      "location": "Remote",
+      "description": "Worked as a freelance software engineer from university until now, building and delivering robust software solutions for small businesses and clients. Responsible for full-cycle development, from system architecture to deployment and maintenance.",
+      "achievements": [
+        "Designed and developed 5+ responsive business websites and SEO-optimized landing pages",
+        "Built custom content management systems tailored to client needs",
+        "Integrated online payment gateways such as VNPay and MoMo",
+        "Collaborated directly with clients to gather requirements and deliver solutions on time"
+      ],
+      "technologies": [
+        "Node.js",
+        "NestJS",
+        "React.js",
+        "Next.js",
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "Docker",
+        "Firebase",
+        "AWS"
+      ]
+    },
+    {
+      "id": 3,
+      "company": "Katec",
+      "position": "Software Engineer",
+      "duration": "2026 - Present",
+      "location": "Vietnam",
+      "description": "Responsible for developing and maintaining large-scale software applications, optimizing workflows, and applying the latest technologies to solve complex business problems.",
+      "achievements": [
+        "Designed and implemented highly scalable microservices architectures",
+        "Optimized database performance and significantly reduced API response times",
+        "Built automated CI/CD pipelines to shorten product deployment cycles",
+        "Collaborated closely with design and product teams to create optimal user experiences"
+      ],
+      "technologies": [
+        "Node.js",
+        "NestJS",
+        "FastAPI",
+        "React.js",
+        "Next.js",
+        "PostgreSQL",
+        "Redis",
+        "Docker",
+        "AWS",
+        "Kubernetes"
       ]
     }
   ],
