@@ -29,7 +29,7 @@
   "hero": {
     "hello": "Xin chào!",
     "hi_im": "Chào, tôi là",
-    "subtitle": "Nếu ánh sáng quá yếu, chúng ta sẽ trở thành những ngọn đuốc để dẫn lối cho nhau",
+    "subtitle": "Bạn vừa là người nghệ sĩ, vừa là một kiệt tác",
     "view_my_work": "Xem dự án",
     "get_in_touch": "Liên hệ"
   },
@@ -110,8 +110,8 @@
   "footer": {
     "quick_links": "Liên kết nhanh",
     "contact_info": "Thông tin liên hệ",
-    "tagline_1": "Nếu ánh sáng quá yếu, chúng ta sẽ trở thành",
-    "tagline_2": "những ngọn đuốc để dẫn lối cho nhau",
+    "tagline_1": "Bạn vừa là người nghệ sĩ",
+    "tagline_2": "vừa là một kiệt tác",
     "back_to_top": "Trở lại đầu trang"
   },
   "skills": {

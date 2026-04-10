@@ -29,7 +29,7 @@
   "hero": {
     "hello": "Hello!",
     "hi_im": "Hi, I'm",
-    "subtitle": "If the light is too dim, we'll become torches to guide each other",
+    "subtitle": "You are both the artist and the masterpiece",
     "view_my_work": "View My Work",
     "get_in_touch": "Get In Touch"
   },
@@ -110,8 +110,8 @@
   "footer": {
     "quick_links": "Quick Links",
     "contact_info": "Contact Info",
-    "tagline_1": "If the light is too dim, we'll become",
-    "tagline_2": "torches to guide each other",
+    "tagline_1": "You are both the artist",
+    "tagline_2": "and the masterpiece",
     "back_to_top": "Back to top"
   },
   "skills": {
