@@ -8,7 +8,7 @@
     "tagline": "Crafting digital experiences with modern technologies",
     "bio": "A passionate software engineer with experience building scalable applications and high-performance systems. I enjoy turning complex problems into simple, beautiful, and intuitive solutions.",
     "profileImage": "/assets/avatar.jpg",
-    "resume": "/Fullstack.pdf"
+    "resume": "/NguyenHoangKha.pdf"
   },
   "social": {
     "github": "https://github.com/nguyenhoangkha03",
@@ -601,34 +601,6 @@
         "Advanced animations powered by Framer Motion",
         "Fully responsive for mobile and desktop devices",
         "Floating action buttons with micro-interactions"
-      ]
-    },
-    {
-      "id": 10,
-      "title": "High-Performance API Service",
-      "description": "A robust backend system built with FastAPI and Redis, featuring distributed task queues, real-time analytics, and optimized database performance for high-traffic applications.",
-      "image": "/backend-api.png",
-      "technologies": [
-        "FastAPI",
-        "Python",
-        "Redis",
-        "PostgreSQL",
-        "Docker",
-        "RabbitMQ",
-        "Celery"
-      ],
-      "category": "Backend / Systems",
-      "featured": true,
-      "links": {
-        "live": "#",
-        "github": "https://github.com/nguyenhoangkha03/fastapi-backend"
-      },
-      "highlights": [
-        "Scalable microservices architecture with FastAPI",
-        "Asynchronous task processing using Celery and RabbitMQ",
-        "Real-time data caching and session management with Redis",
-        "Advanced performance monitoring and logging system",
-        "Automated API documentation with Swagger/OpenAPI"
       ]
     }
   ],

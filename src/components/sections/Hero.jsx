@@ -86,69 +86,68 @@ const Hero = () => {
         >
           <motion.div className="mb-8" variants={itemVariants}>
             <motion.div
-              className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-6"
+              className="w-36 h-36 md:w-44 md:h-44 mx-auto mb-6 relative group"
               variants={floatVariants}
               animate="animate"
             >
-              <PixelTransition
-                firstContent={
-                  <img
-                    src={avatar}
-                    alt={personal.name}
-                    className="w-full h-full rounded-full border-4 border-white dark:border-gray-800 shadow-2xl object-cover"
-                  />
-                }
-                secondContent={
-                  <div className="w-full h-full rounded-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 border-4 border-white dark:border-gray-800 shadow-2xl flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="text-2xl md:text-3xl font-bold text-white mb-1">
-                        👋
-                      </div>
-                      <div className="text-xs md:text-sm font-semibold text-white/90">
-                        {t("hero.hello")}
+              {/* Double neon glow borders */}
+              <div className="absolute inset-[-4px] rounded-full bg-gradient-to-r from-sky-400 via-purple-500 to-pink-500 opacity-60 blur-md group-hover:opacity-100 group-hover:blur-lg transition-all duration-550 animate-pulse-slow"></div>
+              <div 
+                className="absolute inset-0 rounded-full bg-gradient-to-r from-sky-400 via-purple-500 to-pink-500 p-[3px]"
+                style={{ animation: 'spin 10s linear infinite' }}
+              >
+                <div className="w-full h-full rounded-full bg-white dark:bg-gray-900"></div>
+              </div>
+              <div className="absolute inset-[3px] rounded-full overflow-hidden">
+                <PixelTransition
+                  firstContent={
+                    <img
+                      src={avatar}
+                      alt={personal.name}
+                      className="w-full h-full rounded-full object-cover"
+                    />
+                  }
+                  secondContent={
+                    <div className="w-full h-full rounded-full bg-gradient-to-br from-sky-500 via-purple-650 to-pink-500 flex items-center justify-center">
+                      <div className="text-center">
+                        <div className="text-3xl md:text-4xl font-bold text-white mb-1">
+                          👋
+                        </div>
+                        <div className="text-xs md:text-sm font-bold text-white/90">
+                          {t("hero.hello")}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                }
-                gridSize={10}
-                pixelColor="#3b82f6"
-                animationStepDuration={0.4}
-                className="w-full h-full rounded-full"
-                aspectRatio="100%"
-              />
+                  }
+                  gridSize={12}
+                  pixelColor="#0ea5e9"
+                  animationStepDuration={0.4}
+                  className="w-full h-full rounded-full"
+                  aspectRatio="100%"
+                />
+              </div>
             </motion.div>
           </motion.div>
 
           <motion.div variants={itemVariants}>
             <motion.h1
-              className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4"
-              initial={{ scale: 0.8 }}
-              animate={{ scale: 1 }}
+              className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-4 tracking-tight"
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
               <span className="text-gray-900 dark:text-white">
                 {t("hero.hi_im")}{" "}
               </span>
-              <span className="gradient-text">
+              <span className="gradient-text bg-size-200 animate-shimmer relative after:absolute after:bottom-1 after:left-0 after:w-full after:h-[4px] after:bg-sky-400/20 after:rounded-full">
                 {personal.name}
               </span>
             </motion.h1>
           </motion.div>
 
-          {/* <motion.div variants={itemVariants}>
-                        <motion.h2
-                            className="text-xl md:text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 mb-6 font-light"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ duration: 1, delay: 0.5 }}
-                        >
-                            {t("hero.subtitle")}
-                        </motion.h2>
-                    </motion.div> */}
-
           <motion.div variants={itemVariants}>
             <motion.p
-              className="text-lg md:text-xl text-gray-700 dark:text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed"
+              className="text-lg md:text-xl text-gray-700 dark:text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed font-medium"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.7 }}
@@ -162,7 +161,7 @@ const Hero = () => {
             variants={itemVariants}
           >
             <Button
-              variant="gradient"
+              variant="glowing"
               size="lg"
               onClick={() =>
                 document
@@ -173,13 +172,13 @@ const Hero = () => {
             >
               {t("hero.view_my_work")}
               <ExternalLink
-                size={20}
+                size={18}
                 className="ml-2 group-hover:translate-x-1 transition-transform"
               />
             </Button>
 
             <Button
-              variant="outline"
+              variant="glass-reflective"
               size="lg"
               onClick={() =>
                 document

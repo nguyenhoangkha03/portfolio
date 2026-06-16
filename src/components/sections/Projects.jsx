@@ -4,6 +4,166 @@ import { Github, ExternalLink, Filter } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Card from "../ui/Card";
 import Button from "../ui/Button";
+import useTilt from "../../hooks/useTilt";
+
+const ProjectCard = ({ project, t, itemVariants }) => {
+    const cardRef = useTilt({
+        max: 8,
+        speed: 400,
+        scale: 1.015,
+        perspective: 1000,
+        reset: true,
+        transition: true
+    });
+
+    return (
+        <motion.div
+            variants={itemVariants}
+            layout
+            className="h-full"
+        >
+            <div ref={cardRef} className="h-full">
+                <Card
+                    hover={true}
+                    padding="none"
+                    className="h-full overflow-hidden border border-gray-200/50 dark:border-gray-800/40 shadow-md hover:shadow-2xl transition-all duration-300"
+                >
+                    <div className="relative group overflow-hidden">
+                        <img
+                            src={project.image}
+                            alt={`Screenshot of ${project.title} project`}
+                            loading="lazy"
+                            className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4 backdrop-blur-[2px]">
+                            {project.links.live && project.links.live !== "#" && (
+                                <Button
+                                    variant="ghost"
+                                    size="sm"
+                                    href={project.links.live}
+                                    target="_blank"
+                                    className="bg-white text-gray-900 hover:bg-gray-100 p-2.5 rounded-full"
+                                >
+                                    <ExternalLink size={16} />
+                                </Button>
+                            )}
+                            {project.links.github && (
+                                <Button
+                                    variant="ghost"
+                                    size="sm"
+                                    href={project.links.github}
+                                    target="_blank"
+                                    className="bg-white text-gray-900 hover:bg-gray-100 p-2.5 rounded-full"
+                                >
+                                    <Github size={16} />
+                                </Button>
+                            )}
+                        </div>
+
+                        {project.featured && (
+                            <div className="absolute top-4 left-4">
+                                <span className="bg-gradient-to-r from-pink-500 to-purple-500 text-white text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-[0_2px_10px_rgba(217,70,239,0.3)]">
+                                    {t('projects_section.featured')}
+                                </span>
+                            </div>
+                        )}
+
+                        <div className="absolute top-4 right-4">
+                            <span className="bg-white/95 dark:bg-gray-950/80 border border-gray-200/20 dark:border-gray-800/40 text-gray-800 dark:text-gray-250 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-sm">
+                                {project.category}
+                            </span>
+                        </div>
+                    </div>
+
+                    <div className="p-6">
+                        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 transition-colors duration-300 group-hover:text-blue-600 dark:group-hover:text-sky-400">
+                            {project.title}
+                        </h3>
+
+                        <p className="text-gray-600 dark:text-gray-400 text-sm mb-5 leading-relaxed h-[60px] line-clamp-3">
+                            {project.description}
+                        </p>
+
+                        <div className="mb-5">
+                            <h4 className="text-xs font-bold text-gray-900 dark:text-gray-300 uppercase tracking-wider mb-2.5">
+                                {t('projects_section.key_features')}
+                            </h4>
+                            <ul className="text-xs text-gray-600 dark:text-gray-400 space-y-1.5">
+                                {project.highlights
+                                    .slice(0, 2)
+                                    .map(
+                                        (
+                                            highlight,
+                                            index
+                                        ) => (
+                                            <li
+                                                key={index}
+                                                className="flex items-start"
+                                            >
+                                                <span className="w-1.5 h-1.5 bg-gradient-to-r from-sky-400 to-blue-500 rounded-full mt-1.5 mr-2.5 flex-shrink-0"></span>
+                                                <span className="line-clamp-2">{highlight}</span>
+                                            </li>
+                                        )
+                                    )}
+                            </ul>
+                        </div>
+
+                        <div className="flex flex-wrap gap-2 mb-6">
+                            {project.technologies
+                                .slice(0, 4)
+                                .map((tech, index) => (
+                                    <span
+                                        key={index}
+                                        className="text-[10px] bg-sky-50 dark:bg-sky-950/45 text-sky-600 dark:text-sky-400 font-bold border border-sky-100 dark:border-sky-900/40 px-2.5 py-1 rounded-full shadow-sm"
+                                    >
+                                        {tech}
+                                    </span>
+                                ))}
+                            {project.technologies.length > 4 && (
+                                <span className="text-xs text-gray-500 dark:text-gray-450 self-center font-medium pl-1">
+                                    +{project.technologies.length - 4} {t('projects_section.more')}
+                                </span>
+                            )}
+                        </div>
+
+                        <div className="flex space-x-3">
+                            {project.links.live && project.links.live !== "#" && (
+                                <Button
+                                    variant="primary"
+                                    size="sm"
+                                    href={project.links.live}
+                                    target="_blank"
+                                    className="flex-1"
+                                >
+                                    <ExternalLink
+                                        size={14}
+                                        className="mr-1.5"
+                                    />
+                                    {t('projects_section.live_demo')}
+                                </Button>
+                            )}
+                            {project.links.github && (
+                                <Button
+                                    variant="outline"
+                                    size="sm"
+                                    href={project.links.github}
+                                    target="_blank"
+                                    className="flex-1"
+                                >
+                                    <Github
+                                        size={14}
+                                        className="mr-1.5"
+                                    />
+                                    {t('projects_section.code')}
+                                </Button>
+                            )}
+                        </div>
+                    </div>
+                </Card>
+            </div>
+        </motion.div>
+    );
+};
 
 const Projects = () => {
     const { t } = useTranslation();
@@ -68,23 +228,23 @@ const Projects = () => {
                     >
                         <div className="flex items-center space-x-2">
                             <Filter
-                                size={20}
-                                className="text-gray-600 dark:text-gray-400"
+                                size={18}
+                                className="text-gray-500 dark:text-gray-400"
                             />
-                            <span className="text-gray-600 dark:text-gray-400 font-medium">
+                            <span className="text-gray-600 dark:text-gray-450 font-semibold text-sm uppercase tracking-wider">
                                 {t('projects_section.filter_by')}
                             </span>
                         </div>
 
-                        <div className="flex flex-wrap justify-center gap-4">
+                        <div className="flex flex-wrap justify-center gap-2">
                             {categories.map((category) => (
                                 <button
                                     key={category}
                                     onClick={() => setActiveFilter(category)}
-                                    className={`px-4 py-2 rounded-lg font-semibold transition-all duration-300 cursor-target ${
+                                    className={`px-4 py-2 text-sm rounded-full font-bold transition-all duration-300 cursor-target border ${
                                         activeFilter === category
-                                            ? "bg-primary-600 text-white shadow-lg transform scale-105"
-                                            : "bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
+                                            ? "bg-gradient-to-r from-sky-400 to-blue-600 text-white shadow-md shadow-blue-500/20 border-transparent transform scale-102"
+                                            : "bg-gray-50/50 dark:bg-gray-900/30 text-gray-700 dark:text-gray-300 border-gray-200/50 dark:border-gray-800/40 hover:bg-gray-100/50 dark:hover:bg-gray-800/30"
                                     }`}
                                 >
                                     {category}
@@ -102,155 +262,13 @@ const Projects = () => {
                             animate="visible"
                             exit="hidden"
                         >
-                            {filteredProjects.map((project, index) => (
-                                <motion.div
+                            {filteredProjects.map((project) => (
+                                <ProjectCard
                                     key={project.id}
-                                    variants={itemVariants}
-                                    layout
-                                    whileHover={{ y: -5 }}
-                                >
-                                    <Card
-                                        hover={true}
-                                        padding="none"
-                                        className="h-full overflow-hidden"
-                                    >
-                                        <div className="relative group">
-                                            <img
-                                                src={project.image}
-                                                alt={`Screenshot of ${project.title} project`}
-                                                loading="lazy"
-                                                className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
-                                            />
-                                            <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
-                                                {project.links.live && project.links.live !== "#" && (
-                                                    <Button
-                                                        variant="ghost"
-                                                        size="sm"
-                                                        href={project.links.live}
-                                                        target="_blank"
-                                                        className="bg-white text-gray-900 hover:bg-gray-100"
-                                                    >
-                                                        <ExternalLink size={16} />
-                                                    </Button>
-                                                )}
-                                                {project.links.github && (
-                                                    <Button
-                                                        variant="ghost"
-                                                        size="sm"
-                                                        href={project.links.github}
-                                                        target="_blank"
-                                                        className="bg-white text-gray-900 hover:bg-gray-100"
-                                                    >
-                                                        <Github size={16} />
-                                                    </Button>
-                                                )}
-                                            </div>
-
-                                            {project.featured && (
-                                                <div className="absolute top-4 left-4">
-                                                    <span className="bg-accent-500 text-white text-xs font-bold px-2 py-1 rounded-full">
-                                                        {t('projects_section.featured')}
-                                                    </span>
-                                                </div>
-                                            )}
-
-                                            <div className="absolute top-4 right-4">
-                                                <span className="bg-primary-500 text-white text-xs font-semibold px-2 py-1 rounded-full">
-                                                    {project.category}
-                                                </span>
-                                            </div>
-                                        </div>
-
-                                        <div className="p-6">
-                                            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                                                {project.title}
-                                            </h3>
-
-                                            <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed">
-                                                {project.description}
-                                            </p>
-
-                                            <div className="mb-4">
-                                                <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">
-                                                    {t('projects_section.key_features')}
-                                                </h4>
-                                                <ul className="text-xs text-gray-600 dark:text-gray-400 space-y-1">
-                                                    {project.highlights
-                                                        .slice(0, 2)
-                                                        .map(
-                                                            (
-                                                                highlight,
-                                                                index
-                                                            ) => (
-                                                                <li
-                                                                    key={index}
-                                                                    className="flex items-start"
-                                                                >
-                                                                    <span className="w-1.5 h-1.5 bg-primary-500 rounded-full mt-2 mr-2 flex-shrink-0"></span>
-                                                                    {highlight}
-                                                                </li>
-                                                            )
-                                                        )}
-                                                </ul>
-                                            </div>
-
-                                            <div className="flex flex-wrap gap-2 mb-4">
-                                                {project.technologies
-                                                    .slice(0, 4)
-                                                    .map((tech, index) => (
-                                                        <span
-                                                            key={index}
-                                                            className="text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded-full"
-                                                        >
-                                                            {tech}
-                                                        </span>
-                                                    ))}
-                                                {project.technologies.length >
-                                                    4 && (
-                                                    <span className="text-xs text-gray-500 dark:text-gray-400">
-                                                        +
-                                                        {project.technologies
-                                                            .length - 4}{" "}
-                                                        {t('projects_section.more')}
-                                                    </span>
-                                                )}
-                                            </div>
-
-                                             <div className="flex space-x-3">
-                                                {project.links.live && project.links.live !== "#" && (
-                                                    <Button
-                                                        variant="primary"
-                                                        size="sm"
-                                                        href={project.links.live}
-                                                        target="_blank"
-                                                        className="flex-1"
-                                                    >
-                                                        <ExternalLink
-                                                            size={14}
-                                                            className="mr-1"
-                                                        />
-                                                        {t('projects_section.live_demo')}
-                                                    </Button>
-                                                )}
-                                                {project.links.github && (
-                                                    <Button
-                                                        variant="outline"
-                                                        size="sm"
-                                                        href={project.links.github}
-                                                        target="_blank"
-                                                        className="flex-1"
-                                                    >
-                                                        <Github
-                                                            size={14}
-                                                            className="mr-1"
-                                                        />
-                                                        {t('projects_section.code')}
-                                                    </Button>
-                                                )}
-                                            </div>
-                                        </div>
-                                    </Card>
-                                </motion.div>
+                                    project={project}
+                                    t={t}
+                                    itemVariants={itemVariants}
+                                />
                             ))}
                         </motion.div>
                     </AnimatePresence>
@@ -268,11 +286,11 @@ const Projects = () => {
                     )}
 
                     <motion.div
-                        className="text-center mt-12"
+                        className="text-center mt-16"
                         variants={itemVariants}
                     >
                         <Button
-                            variant="outline"
+                            variant="glass-reflective"
                             size="lg"
                             href={social.github}
                             target="_blank"

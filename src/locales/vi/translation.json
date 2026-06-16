@@ -8,7 +8,7 @@
     "tagline": "Kiến tạo trải nghiệm số với công nghệ hiện đại",
     "bio": "Một kỹ sư phần mềm đầy nhiệt huyết với kinh nghiệm xây dựng các hệ thống hiệu năng cao và ứng dụng có khả năng mở rộng. Tôi thích biến các vấn đề phức tạp thành các giải pháp đơn giản, đẹp và trực quan.",
     "profileImage": "/assets/avatar.jpg",
-    "resume": "/Fullstack.pdf"
+    "resume": "/NguyenHoangKha.pdf"
   },
   "social": {
     "github": "https://github.com/nguyenhoangkha03",
@@ -601,34 +601,6 @@
         "Hoạt ảnh nâng cao được cung cấp bởi Framer Motion",
         "Hoàn toàn đáp ứng cho thiết bị di động và máy tính để bàn",
         "Các nút hành động nổi với các tương tác vi mô"
-      ]
-    },
-    {
-      "id": 10,
-      "title": "Hệ thống API hiệu năng cao",
-      "description": "Hệ thống backend mạnh mẽ được xây dựng bằng FastAPI và Redis, hỗ trợ hàng đợi tác vụ phân tán, phân tích thời gian thực và tối ưu hóa hiệu suất cơ sở dữ liệu cho ứng dụng chịu tải cao.",
-      "image": "/backend-api.png",
-      "technologies": [
-        "FastAPI",
-        "Python",
-        "Redis",
-        "PostgreSQL",
-        "Docker",
-        "RabbitMQ",
-        "Celery"
-      ],
-      "category": "Backend / Systems",
-      "featured": true,
-      "links": {
-        "live": "#",
-        "github": "https://github.com/nguyenhoangkha03/fastapi-backend"
-      },
-      "highlights": [
-        "Kiến trúc microservices có khả năng mở rộng với FastAPI",
-        "Xử lý tác vụ bất đồng bộ bằng Celery và RabbitMQ",
-        "Bộ nhớ đệm dữ liệu thời gian thực và quản lý phiên với Redis",
-        "Hệ thống giám sát và ghi nhật ký hiệu suất nâng cao",
-        "Tự động tạo tài liệu API với Swagger/OpenAPI"
       ]
     }
   ],

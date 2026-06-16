@@ -51,6 +51,9 @@ export default {
                 "bounce-in": "bounceIn 0.6s ease-out",
                 "pulse-slow": "pulse 3s infinite",
                 float: "float 6s ease-in-out infinite",
+                shimmer: "shimmer 3s infinite linear",
+                "pulse-glow": "pulseGlow 2s infinite ease-in-out",
+                "text-glow": "textGlow 2s infinite ease-in-out",
             },
             keyframes: {
                 fadeIn: {
@@ -79,9 +82,27 @@ export default {
                     "0%, 100%": { transform: "translateY(0px)" },
                     "50%": { transform: "translateY(-20px)" },
                 },
+                shimmer: {
+                    "0%": { backgroundPosition: "-200% center" },
+                    "100%": { backgroundPosition: "200% center" },
+                },
+                pulseGlow: {
+                    "0%, 100%": { boxShadow: "0 0 5px rgba(56, 189, 248, 0.4), 0 0 10px rgba(56, 189, 248, 0.2)" },
+                    "50%": { boxShadow: "0 0 15px rgba(56, 189, 248, 0.8), 0 0 25px rgba(56, 189, 248, 0.4)" },
+                },
+                textGlow: {
+                    "0%, 100%": { textShadow: "0 0 4px rgba(56, 189, 248, 0.2)" },
+                    "50%": { textShadow: "0 0 12px rgba(56, 189, 248, 0.6), 0 0 20px rgba(168, 85, 247, 0.4)" },
+                }
             },
             backdropBlur: {
                 xs: "2px",
+            },
+            boxShadow: {
+                glass: "0 8px 32px 0 rgba(31, 38, 135, 0.04), 0 1px 1px 0 rgba(255, 255, 255, 0.05) inset",
+                "glass-hover": "0 8px 32px 0 rgba(31, 38, 135, 0.08), 0 0 15px rgba(56, 189, 248, 0.2), 0 1px 1px 0 rgba(255, 255, 255, 0.1) inset",
+                "glass-dark": "0 8px 32px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(255, 255, 255, 0.05) inset",
+                "glass-dark-hover": "0 8px 32px 0 rgba(0, 0, 0, 0.3), 0 0 20px rgba(168, 85, 247, 0.25), 0 1px 1px 0 rgba(255, 255, 255, 0.08) inset",
             },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

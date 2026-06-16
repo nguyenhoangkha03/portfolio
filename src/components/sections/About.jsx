@@ -132,34 +132,35 @@ const About = () => {
                   {education.map((edu, index) => (
                     <motion.div
                       key={index}
-                      className="border-l-4 border-primary-500 pl-4"
+                      className="border-l-[3px] border-sky-400 dark:border-sky-500 pl-5 py-1 relative hover:translate-x-1 transition-all duration-300 group/timeline"
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ delay: index * 0.1 }}
                     >
-                      <h4 className="font-bold text-gray-900 dark:text-white">
+                      <div className="absolute -left-[8px] top-2.5 w-[13px] h-[13px] rounded-full bg-sky-400 dark:bg-sky-500 border-[3px] border-white dark:border-gray-800 shadow-[0_0_8px_rgba(56,189,248,0.5)] group-hover/timeline:scale-125 transition-transform duration-300"></div>
+                      <h4 className="font-bold text-gray-900 dark:text-white group-hover/timeline:text-sky-500 dark:group-hover/timeline:text-sky-400 transition-colors">
                         {edu.degree}
                       </h4>
-                      <p className="text-primary-600 dark:text-primary-400 font-semibold">
+                      <p className="text-primary-650 dark:text-sky-400 font-semibold">
                         {edu.institution}
                       </p>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">
+                      <p className="text-sm text-gray-550 dark:text-gray-400 font-medium">
                         {edu.duration} • GPA: {edu.gpa}
                       </p>
                     </motion.div>
                   ))}
 
-                  <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
+                  <div className="pt-4 border-t border-gray-200 dark:border-gray-800">
                     <h4 className="font-bold text-gray-900 dark:text-white mb-3">
                       {t('about.certifications')}
                     </h4>
-                    <div className="space-y-2">
+                    <div className="space-y-3">
                       {certifications.map(
                         (cert, index) => (
                           <motion.div
                             key={index}
-                            className="flex justify-between items-center p-3 bg-gray-100 dark:bg-gray-700 rounded-lg"
+                            className="flex justify-between items-center p-3.5 bg-gray-50/50 dark:bg-gray-900/30 border border-gray-200/50 dark:border-gray-800/40 rounded-xl hover:shadow-md hover:border-sky-400/50 dark:hover:border-sky-500/40 transition-all duration-300 group/cert"
                             initial={{
                               opacity: 0,
                               scale: 0.95,
@@ -176,14 +177,14 @@ const About = () => {
                             }}
                           >
                             <div>
-                              <p className="font-semibold text-gray-900 dark:text-white text-sm">
+                              <p className="font-bold text-gray-900 dark:text-white text-sm group-hover/cert:text-sky-500 dark:group-hover/cert:text-sky-400 transition-colors">
                                 {cert.name}
                               </p>
-                              <p className="text-xs text-gray-600 dark:text-gray-400">
+                              <p className="text-xs text-gray-500 dark:text-gray-400 font-medium">
                                 {cert.issuer}
                               </p>
                             </div>
-                            <span className="text-xs bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-400 px-2 py-1 rounded">
+                            <span className="text-xs bg-sky-50 dark:bg-sky-950/40 border border-sky-100 dark:border-sky-900/40 text-sky-600 dark:text-sky-400 px-2.5 py-1 rounded-lg font-bold">
                               {cert.date}
                             </span>
                           </motion.div>
@@ -215,11 +216,11 @@ const About = () => {
                   <motion.button
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className={`relative flex items-center space-x-3 py-3 px-6 rounded-2xl transition-all duration-500 ${activeTab === tab.id
-                        ? `bg-white dark:bg-gray-800 text-gray-900 dark:text-white shadow-xl ${tab.glow}`
-                        : "bg-gray-100 dark:bg-gray-900/50 text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-800"
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 0.97 }}
+                    className={`relative flex items-center space-x-3 py-3 px-6 rounded-2xl transition-all duration-500 border cursor-target ${activeTab === tab.id
+                        ? `bg-white dark:bg-gray-800 text-gray-950 dark:text-white shadow-lg ${tab.glow} border-gray-200 dark:border-gray-700`
+                        : "bg-gray-50/50 dark:bg-gray-900/30 text-gray-500 dark:text-gray-400 border-transparent hover:bg-gray-100/50 dark:hover:bg-gray-800/30"
                       }`}
                   >
                     <div className={`p-2 rounded-xl transition-colors duration-500 ${activeTab === tab.id ? tab.bg + " " + tab.color : "bg-gray-200/50 dark:bg-gray-800/50"

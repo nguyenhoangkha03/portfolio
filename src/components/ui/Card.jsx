@@ -18,15 +18,16 @@ const Card = ({
   };
   
   const baseClasses = `
-    bg-white dark:bg-gray-900 
-    border border-gray-200 dark:border-gray-800 
-    rounded-xl 
-    shadow-lg 
+    bg-white/80 dark:bg-gray-900/50 
+    backdrop-blur-md
+    rounded-2xl 
     ${paddingClasses[padding]}
   `;
   
-  const glassClasses = glass ? 'glass backdrop-blur-md bg-white/10 dark:bg-black/10' : '';
-  const hoverClasses = hover ? 'card-hover' : '';
+  const glassClasses = glass 
+    ? 'glass dark:glass-dark shadow-glass dark:shadow-glass-dark' 
+    : 'border border-gray-200/60 dark:border-gray-800/40 shadow-xl';
+  const hoverClasses = hover ? 'card-hover glow-card' : '';
   
   const classes = `${baseClasses} ${glassClasses} ${hoverClasses} group cursor-target ${className}`.trim();
   
@@ -38,13 +39,12 @@ const Card = ({
       viewport={{ once: true }}
       whileHover={{ 
         y: -8,
-        boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
-        transition: { type: "spring", stiffness: 300, damping: 20 }
+        transition: { type: "spring", stiffness: 300, damping: 22 }
       }}
       transition={{ duration: 0.6 }}
       {...props}
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
       <div className="relative z-10">
         {children}
       </div>
