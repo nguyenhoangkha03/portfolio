@@ -199,6 +199,7 @@ const Hero = () => {
               href={social.github}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit my GitHub profile"
               className="p-3 rounded-full bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-primary-100 dark:hover:bg-primary-900 hover:text-primary-600 dark:hover:text-primary-400 transition-all duration-300 cursor-target"
               whileHover={{ scale: 1.1, y: -2 }}
               whileTap={{ scale: 0.95 }}
@@ -210,6 +211,7 @@ const Hero = () => {
               href={social.zalo}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Contact me on Zalo"
               className="p-3 rounded-full bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-primary-100 dark:hover:bg-primary-900 hover:text-primary-600 dark:hover:text-primary-400 transition-all duration-300 cursor-target"
               whileHover={{ scale: 1.1, y: -2 }}
               whileTap={{ scale: 0.95 }}
@@ -221,6 +223,7 @@ const Hero = () => {
               href={social.facebook}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit my Facebook profile"
               className="p-3 rounded-full bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-primary-100 dark:hover:bg-primary-900 hover:text-primary-600 dark:hover:text-primary-400 transition-all duration-300 cursor-target"
               whileHover={{ scale: 1.1, y: -2 }}
               whileTap={{ scale: 0.95 }}

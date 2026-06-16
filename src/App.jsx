@@ -9,10 +9,15 @@ import Experience from "./components/sections/Experience";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/common/Footer";
 import TargetCursor from "./components/ui/TargetCursor";
-import { h1 } from "framer-motion/client";
 
 function AppContent() {
     useScrollAnimation();
+
+    useEffect(() => {
+        // Enable custom cursor class for accessibility-safe cursor hiding
+        document.documentElement.classList.add("custom-cursor-active");
+        return () => document.documentElement.classList.remove("custom-cursor-active");
+    }, []);
 
     useEffect(() => {
         const handleSmoothScroll = (e) => {
@@ -38,7 +43,7 @@ function AppContent() {
                 hideDefaultCursor={true}
             />
             <Navigation />
-            <main>
+            <main id="main-content">
                 <Hero />
                 <About />
                 <Projects />

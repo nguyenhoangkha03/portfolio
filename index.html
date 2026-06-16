@@ -2,28 +2,101 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/icon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Nguyen Hoang Kha | Software Engineer</title>
-        <meta name="description" content="Nguyen Hoang Kha’s professional portfolio. A Software Engineer focused on building modern digital experiences." />
-        <meta name="keywords" content="Nguyen Hoang Kha, Software Engineer, Web Developer, Portfolio, React, Three.js, Tailwind CSS" />
+        <meta name="robots" content="index, follow" />
+        <link rel="icon" type="image/x-icon" href="/icon.ico" />
+        <link rel="canonical" href="https://akaisui.vercel.app/" />
+
+        <title>Nguyen Hoang Kha | Full Stack Software Engineer — Portfolio</title>
+        <meta name="description" content="Nguyen Hoang Kha — Full Stack Software Engineer based in Vietnam. Explore projects including AI platforms, e-commerce, hospital management systems built with React, Next.js, Node.js & more." />
+        <meta name="keywords" content="Nguyen Hoang Kha, Akaisui, Software Engineer, Full Stack Developer, Web Developer, Portfolio, React, Next.js, Node.js, TypeScript, Vietnam" />
         <meta name="author" content="Nguyen Hoang Kha" />
+
+        <!-- Hreflang for i18n -->
+        <link rel="alternate" hreflang="en" href="https://akaisui.vercel.app/" />
+        <link rel="alternate" hreflang="vi" href="https://akaisui.vercel.app/" />
+        <link rel="alternate" hreflang="x-default" href="https://akaisui.vercel.app/" />
 
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://akaisui.vercel.app/" />
-        <meta property="og:title" content="Nguyen Hoang Kha | Software Engineer" />
-        <meta property="og:description" content="Explore my projects and experience as a Software Engineer building scalable applications across web, backend, and modern technology stacks." />
-        <meta property="og:image" content="/avatar.jpg" />
+        <meta property="og:title" content="Nguyen Hoang Kha | Full Stack Software Engineer — Portfolio" />
+        <meta property="og:description" content="Explore my projects and experience as a Full Stack Software Engineer building scalable applications across web, backend, and modern technology stacks." />
+        <meta property="og:image" content="https://akaisui.vercel.app/avatar.jpg" />
+        <meta property="og:image:width" content="800" />
+        <meta property="og:image:height" content="800" />
+        <meta property="og:image:alt" content="Nguyen Hoang Kha — Software Engineer profile photo" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale:alternate" content="vi_VN" />
+        <meta property="og:site_name" content="Akaisui Portfolio" />
 
         <!-- Twitter -->
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://akaisui.vercel.app/" />
-        <meta property="twitter:title" content="Nguyen Hoang Kha | Software Engineer" />
-        <meta property="twitter:description" content="Explore my projects and experience as a Software Engineer building scalable applications across web, backend, and modern technology stacks." />
-        <meta property="twitter:image" content="/avatar.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://akaisui.vercel.app/" />
+        <meta name="twitter:title" content="Nguyen Hoang Kha | Full Stack Software Engineer — Portfolio" />
+        <meta name="twitter:description" content="Explore my projects and experience as a Full Stack Software Engineer building scalable applications across web, backend, and modern technology stacks." />
+        <meta name="twitter:image" content="https://akaisui.vercel.app/avatar.jpg" />
+        <meta name="twitter:image:alt" content="Nguyen Hoang Kha — Software Engineer profile photo" />
+
+        <!-- Preconnect to Google Fonts for performance -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+        <!-- Structured Data: Person -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Nguyen Hoang Kha",
+            "alternateName": "Akaisui",
+            "url": "https://akaisui.vercel.app",
+            "image": "https://akaisui.vercel.app/avatar.jpg",
+            "jobTitle": "Full Stack Software Engineer",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Katec"
+            },
+            "alumniOf": {
+                "@type": "CollegeOrUniversity",
+                "name": "Tay Do University"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Can Tho",
+                "addressCountry": "VN"
+            },
+            "email": "nhoangkha03@gmail.com",
+            "telephone": "+84365907475",
+            "knowsAbout": ["React", "Next.js", "Node.js", "TypeScript", "PostgreSQL", "NestJS", "Docker", "AWS", "Python", "FastAPI"],
+            "sameAs": [
+                "https://github.com/nguyenhoangkha03",
+                "https://www.facebook.com/NguyenHoangKha1910/",
+                "https://x.com/akaisui3",
+                "https://www.instagram.com/akaisui03/"
+            ]
+        }
+        </script>
+
+        <!-- Structured Data: WebSite -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Akaisui Portfolio",
+            "url": "https://akaisui.vercel.app",
+            "description": "Professional portfolio of Nguyen Hoang Kha, a Full Stack Software Engineer based in Vietnam.",
+            "author": {
+                "@type": "Person",
+                "name": "Nguyen Hoang Kha"
+            },
+            "inLanguage": ["en", "vi"]
+        }
+        </script>
     </head>
     <body>
+        <!-- Skip Navigation for Accessibility -->
+        <a href="#main-content" class="skip-nav">Skip to main content</a>
         <div id="root"></div>
         <script type="module" src="/src/main.jsx"></script>
     </body>

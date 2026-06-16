@@ -84,6 +84,7 @@ const Footer = () => {
               <h4 className="text-lg font-semibold mb-4">
                 {t('footer.quick_links')}
               </h4>
+              <nav aria-label="Footer navigation">
               <ul className="space-y-2">
                 {[
                   { name: t('nav.home'), href: '#home' },
@@ -93,8 +94,10 @@ const Footer = () => {
                   { name: t('nav.contact'), href: '#contact' },
                 ].map((item, index) => (
                   <li key={index}>
-                    <button
-                      onClick={() => {
+                    <a
+                      href={item.href}
+                      onClick={(e) => {
+                        e.preventDefault();
                         const element =
                           document.querySelector(
                             item.href
@@ -108,10 +111,11 @@ const Footer = () => {
                       className="text-gray-300 hover:text-primary-400 transition-colors duration-200"
                     >
                       {item.name}
-                    </button>
+                    </a>
                   </li>
                 ))}
               </ul>
+              </nav>
             </motion.div>
 
             <motion.div

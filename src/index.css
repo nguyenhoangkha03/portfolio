@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css');
 @tailwind base;
 @tailwind components;
@@ -104,16 +103,20 @@
     border: 1px solid rgba(0, 0, 0, 0.2);
   }
 
-  /* Custom Cursor Effects */
-  * {
+  /* Custom Cursor Effects — only active when .custom-cursor-active is on html */
+  .custom-cursor-active * {
     cursor: none !important;
   }
   
-  body {
+  .custom-cursor-active body {
     cursor: none !important;
   }
   
-  button, a, input, textarea, select {
+  .custom-cursor-active button,
+  .custom-cursor-active a,
+  .custom-cursor-active input,
+  .custom-cursor-active textarea,
+  .custom-cursor-active select {
     cursor: none !important;
   }
 
@@ -362,4 +365,27 @@
 .dark ::selection {
   background-color: #075985;
   color: #e0f2fe;
+}
+
+/* Skip Navigation — Accessibility */
+.skip-nav {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  padding: 0.75rem 1.5rem;
+  background-color: #0284c7;
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+
+.skip-nav:focus {
+  top: 0;
+  outline: 2px solid #38bdf8;
+  outline-offset: 2px;
 }

@@ -73,7 +73,9 @@ const Navigation = () => {
     };
 
     return (
+        <header>
         <motion.nav
+            aria-label="Main navigation"
             className={`fixed w-full top-0 z-50 transition-all duration-300 ${
                 scrolled ? "navbar-blur py-2" : "bg-transparent py-4"
             }`}
@@ -93,9 +95,13 @@ const Navigation = () => {
 
                     <div className="hidden md:flex items-center space-x-8">
                         {navItems.map((item, index) => (
-                            <motion.button
+                            <motion.a
                                 key={item.name}
-                                onClick={() => scrollToSection(item.href)}
+                                href={item.href}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    scrollToSection(item.href);
+                                }}
                                 className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 font-medium relative group cursor-target"
                                 initial={{ opacity: 0, y: -20 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -110,7 +116,7 @@ const Navigation = () => {
                                 whileTap={{ scale: 0.95 }}
                             >
                                 <span className="relative z-10">{item.name}</span>
-                            </motion.button>
+                            </motion.a>
                         ))}
 
                         <div className="flex items-center space-x-4">
@@ -120,6 +126,7 @@ const Navigation = () => {
                                 size="sm"
                                 onClick={toggleTheme}
                                 className="p-2"
+                                aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
                             >
                                 {theme === "dark" ? (
                                     <Sun size={20} />
@@ -137,6 +144,7 @@ const Navigation = () => {
                             size="sm"
                             onClick={toggleTheme}
                             className="p-2"
+                            aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
                         >
                             {theme === "dark" ? (
                                 <Sun size={20} />
@@ -150,6 +158,8 @@ const Navigation = () => {
                             size="sm"
                             onClick={() => setIsOpen(!isOpen)}
                             className="p-2"
+                            aria-label={isOpen ? "Close menu" : "Open menu"}
+                            aria-expanded={isOpen}
                         >
                             {isOpen ? <X size={24} /> : <Menu size={24} />}
                         </Button>
@@ -167,11 +177,13 @@ const Navigation = () => {
                         >
                             <div className="flex flex-col space-y-4 pt-4 border-t border-gray-200 dark:border-gray-700">
                                 {navItems.map((item, index) => (
-                                    <motion.button
+                                    <motion.a
                                         key={item.name}
-                                        onClick={() =>
-                                            scrollToSection(item.href)
-                                        }
+                                        href={item.href}
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            scrollToSection(item.href);
+                                        }}
                                         className="text-left text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 font-medium py-2"
                                         initial={{ opacity: 0, x: -20 }}
                                         animate={{ opacity: 1, x: 0 }}
@@ -181,7 +193,7 @@ const Navigation = () => {
                                         }}
                                     >
                                         {item.name}
-                                    </motion.button>
+                                    </motion.a>
                                 ))}
                             </div>
                         </motion.div>
@@ -189,6 +201,7 @@ const Navigation = () => {
                 </AnimatePresence>
             </div>
         </motion.nav>
+        </header>
     );
 };
 

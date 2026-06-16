@@ -386,20 +386,22 @@ const Contact = () => {
                 <div className="space-y-6">
                   {contactMethods.map((method, index) => {
                     const IconComponent = method.icon;
+                    const isExternalLink = method.href.startsWith("https://");
                     return (
                       <motion.a
                         key={index}
                         href={method.href}
                         target={
-                          method.title === "Location"
+                          isExternalLink
                             ? "_blank"
                             : undefined
                         }
                         rel={
-                          method.title === "Location"
+                          isExternalLink
                             ? "noopener noreferrer"
                             : undefined
                         }
+                        aria-label={`${method.title}: ${method.value}`}
                         className="flex items-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200 group"
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
