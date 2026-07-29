@@ -213,7 +213,7 @@ const Contact = () => {
                         })}
                         className={`w-full px-4 py-3 rounded-xl border cursor-target transition-all duration-300 ${errors.first_name
                             ? "border-red-500 focus:border-red-500 focus:ring-red-500/20"
-                            : "border-gray-250 dark:border-gray-700/60 focus:border-sky-400 dark:focus:border-sky-500 focus:ring-sky-400/20 dark:focus:ring-sky-500/15"
+                            : "border-gray-200 dark:border-gray-700/60 focus:border-sky-400 dark:focus:border-sky-500 focus:ring-sky-400/20 dark:focus:ring-sky-500/15"
                           } bg-white/60 dark:bg-gray-800/45 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-4`}
                         placeholder={t(
                           "contact_section.form_firstname_placeholder"
@@ -241,7 +241,7 @@ const Contact = () => {
                         })}
                         className={`w-full px-4 py-3 rounded-xl border cursor-target transition-all duration-300 ${errors.last_name
                             ? "border-red-500 focus:border-red-500 focus:ring-red-500/20"
-                            : "border-gray-250 dark:border-gray-700/60 focus:border-sky-400 dark:focus:border-sky-500 focus:ring-sky-400/20 dark:focus:ring-sky-500/15"
+                            : "border-gray-200 dark:border-gray-700/60 focus:border-sky-400 dark:focus:border-sky-500 focus:ring-sky-400/20 dark:focus:ring-sky-500/15"
                           } bg-white/60 dark:bg-gray-800/45 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-4`}
                         placeholder={t(
                           "contact_section.form_lastname_placeholder"
@@ -274,8 +274,8 @@ const Contact = () => {
                       })}
                       className={`w-full px-4 py-3 rounded-xl border cursor-target transition-all duration-300 ${errors.user_email
                           ? "border-red-500 focus:border-red-500 focus:ring-red-500/20"
-                          : "border-gray-250 dark:border-gray-700/60 focus:border-sky-400 dark:focus:border-sky-500 focus:ring-sky-400/20 dark:focus:ring-sky-500/15"
-                        } bg-white/60 dark:bg-gray-800/45 text-gray-900 dark:text-white placeholder-gray-450 dark:placeholder-gray-500 focus:outline-none focus:ring-4`}
+                          : "border-gray-200 dark:border-gray-700/60 focus:border-sky-400 dark:focus:border-sky-500 focus:ring-sky-400/20 dark:focus:ring-sky-500/15"
+                        } bg-white/60 dark:bg-gray-800/45 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-4`}
                       placeholder="john.doe@example.com"
                     />
                     {errors.user_email && (

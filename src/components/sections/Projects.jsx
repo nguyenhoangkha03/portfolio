@@ -69,7 +69,7 @@ const ProjectCard = ({ project, t, itemVariants }) => {
                         )}
 
                         <div className="absolute top-4 right-4">
-                            <span className="bg-white/95 dark:bg-gray-950/80 border border-gray-200/20 dark:border-gray-800/40 text-gray-800 dark:text-gray-250 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-sm">
+                            <span className="bg-white/90 dark:bg-gray-900/90 border border-gray-200/50 dark:border-gray-700/60 text-gray-800 dark:text-gray-100 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-sm backdrop-blur-md">
                                 {project.category}
                             </span>
                         </div>
@@ -120,7 +120,7 @@ const ProjectCard = ({ project, t, itemVariants }) => {
                                     </span>
                                 ))}
                             {project.technologies.length > 4 && (
-                                <span className="text-xs text-gray-500 dark:text-gray-450 self-center font-medium pl-1">
+                                <span className="text-xs text-gray-500 dark:text-gray-400 self-center font-medium pl-1">
                                     +{project.technologies.length - 4} {t('projects_section.more')}
                                 </span>
                             )}
@@ -231,7 +231,7 @@ const Projects = () => {
                                 size={18}
                                 className="text-gray-500 dark:text-gray-400"
                             />
-                            <span className="text-gray-600 dark:text-gray-450 font-semibold text-sm uppercase tracking-wider">
+                            <span className="text-gray-600 dark:text-gray-400 font-semibold text-sm uppercase tracking-wider">
                                 {t('projects_section.filter_by')}
                             </span>
                         </div>
